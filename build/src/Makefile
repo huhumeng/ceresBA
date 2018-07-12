@@ -125,59 +125,59 @@ ceresBA_LIBS/fast:
 	cd /home/ling/slam_ws/mycode/ceresBA/build && $(MAKE) -f src/CMakeFiles/ceresBA_LIBS.dir/build.make src/CMakeFiles/ceresBA_LIBS.dir/build
 .PHONY : ceresBA_LIBS/fast
 
-PnPproblem.o: PnPproblem.cc.o
+CeresCost/CostFunctions.o: CeresCost/CostFunctions.cc.o
 
-.PHONY : PnPproblem.o
-
-# target to build an object file
-PnPproblem.cc.o:
-	cd /home/ling/slam_ws/mycode/ceresBA/build && $(MAKE) -f src/CMakeFiles/ceresBA_LIBS.dir/build.make src/CMakeFiles/ceresBA_LIBS.dir/PnPproblem.cc.o
-.PHONY : PnPproblem.cc.o
-
-PnPproblem.i: PnPproblem.cc.i
-
-.PHONY : PnPproblem.i
-
-# target to preprocess a source file
-PnPproblem.cc.i:
-	cd /home/ling/slam_ws/mycode/ceresBA/build && $(MAKE) -f src/CMakeFiles/ceresBA_LIBS.dir/build.make src/CMakeFiles/ceresBA_LIBS.dir/PnPproblem.cc.i
-.PHONY : PnPproblem.cc.i
-
-PnPproblem.s: PnPproblem.cc.s
-
-.PHONY : PnPproblem.s
-
-# target to generate assembly for a file
-PnPproblem.cc.s:
-	cd /home/ling/slam_ws/mycode/ceresBA/build && $(MAKE) -f src/CMakeFiles/ceresBA_LIBS.dir/build.make src/CMakeFiles/ceresBA_LIBS.dir/PnPproblem.cc.s
-.PHONY : PnPproblem.cc.s
-
-ceresBA.o: ceresBA.cc.o
-
-.PHONY : ceresBA.o
+.PHONY : CeresCost/CostFunctions.o
 
 # target to build an object file
-ceresBA.cc.o:
-	cd /home/ling/slam_ws/mycode/ceresBA/build && $(MAKE) -f src/CMakeFiles/ceresBA_LIBS.dir/build.make src/CMakeFiles/ceresBA_LIBS.dir/ceresBA.cc.o
-.PHONY : ceresBA.cc.o
+CeresCost/CostFunctions.cc.o:
+	cd /home/ling/slam_ws/mycode/ceresBA/build && $(MAKE) -f src/CMakeFiles/ceresBA_LIBS.dir/build.make src/CMakeFiles/ceresBA_LIBS.dir/CeresCost/CostFunctions.cc.o
+.PHONY : CeresCost/CostFunctions.cc.o
 
-ceresBA.i: ceresBA.cc.i
+CeresCost/CostFunctions.i: CeresCost/CostFunctions.cc.i
 
-.PHONY : ceresBA.i
+.PHONY : CeresCost/CostFunctions.i
 
 # target to preprocess a source file
-ceresBA.cc.i:
-	cd /home/ling/slam_ws/mycode/ceresBA/build && $(MAKE) -f src/CMakeFiles/ceresBA_LIBS.dir/build.make src/CMakeFiles/ceresBA_LIBS.dir/ceresBA.cc.i
-.PHONY : ceresBA.cc.i
+CeresCost/CostFunctions.cc.i:
+	cd /home/ling/slam_ws/mycode/ceresBA/build && $(MAKE) -f src/CMakeFiles/ceresBA_LIBS.dir/build.make src/CMakeFiles/ceresBA_LIBS.dir/CeresCost/CostFunctions.cc.i
+.PHONY : CeresCost/CostFunctions.cc.i
 
-ceresBA.s: ceresBA.cc.s
+CeresCost/CostFunctions.s: CeresCost/CostFunctions.cc.s
 
-.PHONY : ceresBA.s
+.PHONY : CeresCost/CostFunctions.s
 
 # target to generate assembly for a file
-ceresBA.cc.s:
-	cd /home/ling/slam_ws/mycode/ceresBA/build && $(MAKE) -f src/CMakeFiles/ceresBA_LIBS.dir/build.make src/CMakeFiles/ceresBA_LIBS.dir/ceresBA.cc.s
-.PHONY : ceresBA.cc.s
+CeresCost/CostFunctions.cc.s:
+	cd /home/ling/slam_ws/mycode/ceresBA/build && $(MAKE) -f src/CMakeFiles/ceresBA_LIBS.dir/build.make src/CMakeFiles/ceresBA_LIBS.dir/CeresCost/CostFunctions.cc.s
+.PHONY : CeresCost/CostFunctions.cc.s
+
+Util/GenData.o: Util/GenData.cc.o
+
+.PHONY : Util/GenData.o
+
+# target to build an object file
+Util/GenData.cc.o:
+	cd /home/ling/slam_ws/mycode/ceresBA/build && $(MAKE) -f src/CMakeFiles/ceresBA_LIBS.dir/build.make src/CMakeFiles/ceresBA_LIBS.dir/Util/GenData.cc.o
+.PHONY : Util/GenData.cc.o
+
+Util/GenData.i: Util/GenData.cc.i
+
+.PHONY : Util/GenData.i
+
+# target to preprocess a source file
+Util/GenData.cc.i:
+	cd /home/ling/slam_ws/mycode/ceresBA/build && $(MAKE) -f src/CMakeFiles/ceresBA_LIBS.dir/build.make src/CMakeFiles/ceresBA_LIBS.dir/Util/GenData.cc.i
+.PHONY : Util/GenData.cc.i
+
+Util/GenData.s: Util/GenData.cc.s
+
+.PHONY : Util/GenData.s
+
+# target to generate assembly for a file
+Util/GenData.cc.s:
+	cd /home/ling/slam_ws/mycode/ceresBA/build && $(MAKE) -f src/CMakeFiles/ceresBA_LIBS.dir/build.make src/CMakeFiles/ceresBA_LIBS.dir/Util/GenData.cc.s
+.PHONY : Util/GenData.cc.s
 
 # Help Target
 help:
@@ -188,12 +188,12 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... ceresBA_LIBS"
-	@echo "... PnPproblem.o"
-	@echo "... PnPproblem.i"
-	@echo "... PnPproblem.s"
-	@echo "... ceresBA.o"
-	@echo "... ceresBA.i"
-	@echo "... ceresBA.s"
+	@echo "... CeresCost/CostFunctions.o"
+	@echo "... CeresCost/CostFunctions.i"
+	@echo "... CeresCost/CostFunctions.s"
+	@echo "... Util/GenData.o"
+	@echo "... Util/GenData.i"
+	@echo "... Util/GenData.s"
 .PHONY : help
 
 

@@ -118,12 +118,12 @@ clean: src/CMakeFiles/ceresBA_LIBS.dir/clean
 # Directory level rules for directory test
 
 # Convenience name for "all" pass in the directory.
-test/all: test/CMakeFiles/testBA.dir/all
+test/all: test/CMakeFiles/testICPOptim.dir/all
 
 .PHONY : test/all
 
 # Convenience name for "clean" pass in the directory.
-test/clean: test/CMakeFiles/testBA.dir/clean
+test/clean: test/CMakeFiles/testICPOptim.dir/clean
 
 .PHONY : test/clean
 
@@ -133,39 +133,39 @@ test/preinstall:
 .PHONY : test/preinstall
 
 #=============================================================================
-# Target rules for target test/CMakeFiles/testBA.dir
+# Target rules for target test/CMakeFiles/testICPOptim.dir
 
 # All Build rule for target.
-test/CMakeFiles/testBA.dir/all:
-	$(MAKE) -f test/CMakeFiles/testBA.dir/build.make test/CMakeFiles/testBA.dir/depend
-	$(MAKE) -f test/CMakeFiles/testBA.dir/build.make test/CMakeFiles/testBA.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ling/slam_ws/mycode/ceresBA/build/CMakeFiles --progress-num=4,5 "Built target testBA"
-.PHONY : test/CMakeFiles/testBA.dir/all
+test/CMakeFiles/testICPOptim.dir/all:
+	$(MAKE) -f test/CMakeFiles/testICPOptim.dir/build.make test/CMakeFiles/testICPOptim.dir/depend
+	$(MAKE) -f test/CMakeFiles/testICPOptim.dir/build.make test/CMakeFiles/testICPOptim.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ling/slam_ws/mycode/ceresBA/build/CMakeFiles --progress-num=4,5 "Built target testICPOptim"
+.PHONY : test/CMakeFiles/testICPOptim.dir/all
 
 # Include target in all.
-all: test/CMakeFiles/testBA.dir/all
+all: test/CMakeFiles/testICPOptim.dir/all
 
 .PHONY : all
 
 # Build rule for subdir invocation for target.
-test/CMakeFiles/testBA.dir/rule: cmake_check_build_system
+test/CMakeFiles/testICPOptim.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/ling/slam_ws/mycode/ceresBA/build/CMakeFiles 2
-	$(MAKE) -f CMakeFiles/Makefile2 test/CMakeFiles/testBA.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 test/CMakeFiles/testICPOptim.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/ling/slam_ws/mycode/ceresBA/build/CMakeFiles 0
-.PHONY : test/CMakeFiles/testBA.dir/rule
+.PHONY : test/CMakeFiles/testICPOptim.dir/rule
 
 # Convenience name for target.
-testBA: test/CMakeFiles/testBA.dir/rule
+testICPOptim: test/CMakeFiles/testICPOptim.dir/rule
 
-.PHONY : testBA
-
-# clean rule for target.
-test/CMakeFiles/testBA.dir/clean:
-	$(MAKE) -f test/CMakeFiles/testBA.dir/build.make test/CMakeFiles/testBA.dir/clean
-.PHONY : test/CMakeFiles/testBA.dir/clean
+.PHONY : testICPOptim
 
 # clean rule for target.
-clean: test/CMakeFiles/testBA.dir/clean
+test/CMakeFiles/testICPOptim.dir/clean:
+	$(MAKE) -f test/CMakeFiles/testICPOptim.dir/build.make test/CMakeFiles/testICPOptim.dir/clean
+.PHONY : test/CMakeFiles/testICPOptim.dir/clean
+
+# clean rule for target.
+clean: test/CMakeFiles/testICPOptim.dir/clean
 
 .PHONY : clean
 

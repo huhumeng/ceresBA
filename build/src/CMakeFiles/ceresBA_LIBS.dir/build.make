@@ -57,64 +57,64 @@ include src/CMakeFiles/ceresBA_LIBS.dir/progress.make
 # Include the compile flags for this target's objects.
 include src/CMakeFiles/ceresBA_LIBS.dir/flags.make
 
-src/CMakeFiles/ceresBA_LIBS.dir/ceresBA.cc.o: src/CMakeFiles/ceresBA_LIBS.dir/flags.make
-src/CMakeFiles/ceresBA_LIBS.dir/ceresBA.cc.o: ../src/ceresBA.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ling/slam_ws/mycode/ceresBA/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object src/CMakeFiles/ceresBA_LIBS.dir/ceresBA.cc.o"
-	cd /home/ling/slam_ws/mycode/ceresBA/build/src && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ceresBA_LIBS.dir/ceresBA.cc.o -c /home/ling/slam_ws/mycode/ceresBA/src/ceresBA.cc
+src/CMakeFiles/ceresBA_LIBS.dir/CeresCost/CostFunctions.cc.o: src/CMakeFiles/ceresBA_LIBS.dir/flags.make
+src/CMakeFiles/ceresBA_LIBS.dir/CeresCost/CostFunctions.cc.o: ../src/CeresCost/CostFunctions.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ling/slam_ws/mycode/ceresBA/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object src/CMakeFiles/ceresBA_LIBS.dir/CeresCost/CostFunctions.cc.o"
+	cd /home/ling/slam_ws/mycode/ceresBA/build/src && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ceresBA_LIBS.dir/CeresCost/CostFunctions.cc.o -c /home/ling/slam_ws/mycode/ceresBA/src/CeresCost/CostFunctions.cc
 
-src/CMakeFiles/ceresBA_LIBS.dir/ceresBA.cc.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ceresBA_LIBS.dir/ceresBA.cc.i"
-	cd /home/ling/slam_ws/mycode/ceresBA/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ling/slam_ws/mycode/ceresBA/src/ceresBA.cc > CMakeFiles/ceresBA_LIBS.dir/ceresBA.cc.i
+src/CMakeFiles/ceresBA_LIBS.dir/CeresCost/CostFunctions.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ceresBA_LIBS.dir/CeresCost/CostFunctions.cc.i"
+	cd /home/ling/slam_ws/mycode/ceresBA/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ling/slam_ws/mycode/ceresBA/src/CeresCost/CostFunctions.cc > CMakeFiles/ceresBA_LIBS.dir/CeresCost/CostFunctions.cc.i
 
-src/CMakeFiles/ceresBA_LIBS.dir/ceresBA.cc.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ceresBA_LIBS.dir/ceresBA.cc.s"
-	cd /home/ling/slam_ws/mycode/ceresBA/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ling/slam_ws/mycode/ceresBA/src/ceresBA.cc -o CMakeFiles/ceresBA_LIBS.dir/ceresBA.cc.s
+src/CMakeFiles/ceresBA_LIBS.dir/CeresCost/CostFunctions.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ceresBA_LIBS.dir/CeresCost/CostFunctions.cc.s"
+	cd /home/ling/slam_ws/mycode/ceresBA/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ling/slam_ws/mycode/ceresBA/src/CeresCost/CostFunctions.cc -o CMakeFiles/ceresBA_LIBS.dir/CeresCost/CostFunctions.cc.s
 
-src/CMakeFiles/ceresBA_LIBS.dir/ceresBA.cc.o.requires:
+src/CMakeFiles/ceresBA_LIBS.dir/CeresCost/CostFunctions.cc.o.requires:
 
-.PHONY : src/CMakeFiles/ceresBA_LIBS.dir/ceresBA.cc.o.requires
+.PHONY : src/CMakeFiles/ceresBA_LIBS.dir/CeresCost/CostFunctions.cc.o.requires
 
-src/CMakeFiles/ceresBA_LIBS.dir/ceresBA.cc.o.provides: src/CMakeFiles/ceresBA_LIBS.dir/ceresBA.cc.o.requires
-	$(MAKE) -f src/CMakeFiles/ceresBA_LIBS.dir/build.make src/CMakeFiles/ceresBA_LIBS.dir/ceresBA.cc.o.provides.build
-.PHONY : src/CMakeFiles/ceresBA_LIBS.dir/ceresBA.cc.o.provides
+src/CMakeFiles/ceresBA_LIBS.dir/CeresCost/CostFunctions.cc.o.provides: src/CMakeFiles/ceresBA_LIBS.dir/CeresCost/CostFunctions.cc.o.requires
+	$(MAKE) -f src/CMakeFiles/ceresBA_LIBS.dir/build.make src/CMakeFiles/ceresBA_LIBS.dir/CeresCost/CostFunctions.cc.o.provides.build
+.PHONY : src/CMakeFiles/ceresBA_LIBS.dir/CeresCost/CostFunctions.cc.o.provides
 
-src/CMakeFiles/ceresBA_LIBS.dir/ceresBA.cc.o.provides.build: src/CMakeFiles/ceresBA_LIBS.dir/ceresBA.cc.o
+src/CMakeFiles/ceresBA_LIBS.dir/CeresCost/CostFunctions.cc.o.provides.build: src/CMakeFiles/ceresBA_LIBS.dir/CeresCost/CostFunctions.cc.o
 
 
-src/CMakeFiles/ceresBA_LIBS.dir/PnPproblem.cc.o: src/CMakeFiles/ceresBA_LIBS.dir/flags.make
-src/CMakeFiles/ceresBA_LIBS.dir/PnPproblem.cc.o: ../src/PnPproblem.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ling/slam_ws/mycode/ceresBA/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object src/CMakeFiles/ceresBA_LIBS.dir/PnPproblem.cc.o"
-	cd /home/ling/slam_ws/mycode/ceresBA/build/src && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ceresBA_LIBS.dir/PnPproblem.cc.o -c /home/ling/slam_ws/mycode/ceresBA/src/PnPproblem.cc
+src/CMakeFiles/ceresBA_LIBS.dir/Util/GenData.cc.o: src/CMakeFiles/ceresBA_LIBS.dir/flags.make
+src/CMakeFiles/ceresBA_LIBS.dir/Util/GenData.cc.o: ../src/Util/GenData.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ling/slam_ws/mycode/ceresBA/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object src/CMakeFiles/ceresBA_LIBS.dir/Util/GenData.cc.o"
+	cd /home/ling/slam_ws/mycode/ceresBA/build/src && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ceresBA_LIBS.dir/Util/GenData.cc.o -c /home/ling/slam_ws/mycode/ceresBA/src/Util/GenData.cc
 
-src/CMakeFiles/ceresBA_LIBS.dir/PnPproblem.cc.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ceresBA_LIBS.dir/PnPproblem.cc.i"
-	cd /home/ling/slam_ws/mycode/ceresBA/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ling/slam_ws/mycode/ceresBA/src/PnPproblem.cc > CMakeFiles/ceresBA_LIBS.dir/PnPproblem.cc.i
+src/CMakeFiles/ceresBA_LIBS.dir/Util/GenData.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ceresBA_LIBS.dir/Util/GenData.cc.i"
+	cd /home/ling/slam_ws/mycode/ceresBA/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ling/slam_ws/mycode/ceresBA/src/Util/GenData.cc > CMakeFiles/ceresBA_LIBS.dir/Util/GenData.cc.i
 
-src/CMakeFiles/ceresBA_LIBS.dir/PnPproblem.cc.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ceresBA_LIBS.dir/PnPproblem.cc.s"
-	cd /home/ling/slam_ws/mycode/ceresBA/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ling/slam_ws/mycode/ceresBA/src/PnPproblem.cc -o CMakeFiles/ceresBA_LIBS.dir/PnPproblem.cc.s
+src/CMakeFiles/ceresBA_LIBS.dir/Util/GenData.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ceresBA_LIBS.dir/Util/GenData.cc.s"
+	cd /home/ling/slam_ws/mycode/ceresBA/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ling/slam_ws/mycode/ceresBA/src/Util/GenData.cc -o CMakeFiles/ceresBA_LIBS.dir/Util/GenData.cc.s
 
-src/CMakeFiles/ceresBA_LIBS.dir/PnPproblem.cc.o.requires:
+src/CMakeFiles/ceresBA_LIBS.dir/Util/GenData.cc.o.requires:
 
-.PHONY : src/CMakeFiles/ceresBA_LIBS.dir/PnPproblem.cc.o.requires
+.PHONY : src/CMakeFiles/ceresBA_LIBS.dir/Util/GenData.cc.o.requires
 
-src/CMakeFiles/ceresBA_LIBS.dir/PnPproblem.cc.o.provides: src/CMakeFiles/ceresBA_LIBS.dir/PnPproblem.cc.o.requires
-	$(MAKE) -f src/CMakeFiles/ceresBA_LIBS.dir/build.make src/CMakeFiles/ceresBA_LIBS.dir/PnPproblem.cc.o.provides.build
-.PHONY : src/CMakeFiles/ceresBA_LIBS.dir/PnPproblem.cc.o.provides
+src/CMakeFiles/ceresBA_LIBS.dir/Util/GenData.cc.o.provides: src/CMakeFiles/ceresBA_LIBS.dir/Util/GenData.cc.o.requires
+	$(MAKE) -f src/CMakeFiles/ceresBA_LIBS.dir/build.make src/CMakeFiles/ceresBA_LIBS.dir/Util/GenData.cc.o.provides.build
+.PHONY : src/CMakeFiles/ceresBA_LIBS.dir/Util/GenData.cc.o.provides
 
-src/CMakeFiles/ceresBA_LIBS.dir/PnPproblem.cc.o.provides.build: src/CMakeFiles/ceresBA_LIBS.dir/PnPproblem.cc.o
+src/CMakeFiles/ceresBA_LIBS.dir/Util/GenData.cc.o.provides.build: src/CMakeFiles/ceresBA_LIBS.dir/Util/GenData.cc.o
 
 
 # Object files for target ceresBA_LIBS
 ceresBA_LIBS_OBJECTS = \
-"CMakeFiles/ceresBA_LIBS.dir/ceresBA.cc.o" \
-"CMakeFiles/ceresBA_LIBS.dir/PnPproblem.cc.o"
+"CMakeFiles/ceresBA_LIBS.dir/CeresCost/CostFunctions.cc.o" \
+"CMakeFiles/ceresBA_LIBS.dir/Util/GenData.cc.o"
 
 # External object files for target ceresBA_LIBS
 ceresBA_LIBS_EXTERNAL_OBJECTS =
 
-../lib/libceresBA_LIBS.so: src/CMakeFiles/ceresBA_LIBS.dir/ceresBA.cc.o
-../lib/libceresBA_LIBS.so: src/CMakeFiles/ceresBA_LIBS.dir/PnPproblem.cc.o
+../lib/libceresBA_LIBS.so: src/CMakeFiles/ceresBA_LIBS.dir/CeresCost/CostFunctions.cc.o
+../lib/libceresBA_LIBS.so: src/CMakeFiles/ceresBA_LIBS.dir/Util/GenData.cc.o
 ../lib/libceresBA_LIBS.so: src/CMakeFiles/ceresBA_LIBS.dir/build.make
 ../lib/libceresBA_LIBS.so: /opt/ros/kinetic/lib/x86_64-linux-gnu/libopencv_stitching3.so.3.3.1
 ../lib/libceresBA_LIBS.so: /opt/ros/kinetic/lib/x86_64-linux-gnu/libopencv_superres3.so.3.3.1
@@ -142,8 +142,8 @@ ceresBA_LIBS_EXTERNAL_OBJECTS =
 ../lib/libceresBA_LIBS.so: /opt/ros/kinetic/lib/x86_64-linux-gnu/libopencv_ximgproc3.so.3.3.1
 ../lib/libceresBA_LIBS.so: /opt/ros/kinetic/lib/x86_64-linux-gnu/libopencv_xobjdetect3.so.3.3.1
 ../lib/libceresBA_LIBS.so: /opt/ros/kinetic/lib/x86_64-linux-gnu/libopencv_xphoto3.so.3.3.1
-../lib/libceresBA_LIBS.so: /usr/lib/x86_64-linux-gnu/libglog.so
 ../lib/libceresBA_LIBS.so: /usr/local/lib/libceres.a
+../lib/libceresBA_LIBS.so: /usr/lib/x86_64-linux-gnu/libglog.so
 ../lib/libceresBA_LIBS.so: /opt/ros/kinetic/lib/x86_64-linux-gnu/libopencv_shape3.so.3.3.1
 ../lib/libceresBA_LIBS.so: /opt/ros/kinetic/lib/x86_64-linux-gnu/libopencv_photo3.so.3.3.1
 ../lib/libceresBA_LIBS.so: /opt/ros/kinetic/lib/x86_64-linux-gnu/libopencv_datasets3.so.3.3.1
@@ -163,7 +163,6 @@ ceresBA_LIBS_EXTERNAL_OBJECTS =
 ../lib/libceresBA_LIBS.so: /opt/ros/kinetic/lib/x86_64-linux-gnu/libopencv_objdetect3.so.3.3.1
 ../lib/libceresBA_LIBS.so: /opt/ros/kinetic/lib/x86_64-linux-gnu/libopencv_imgproc3.so.3.3.1
 ../lib/libceresBA_LIBS.so: /opt/ros/kinetic/lib/x86_64-linux-gnu/libopencv_core3.so.3.3.1
-../lib/libceresBA_LIBS.so: /usr/lib/x86_64-linux-gnu/libglog.so
 ../lib/libceresBA_LIBS.so: /usr/lib/x86_64-linux-gnu/libgflags.so
 ../lib/libceresBA_LIBS.so: /usr/lib/x86_64-linux-gnu/libspqr.so
 ../lib/libceresBA_LIBS.so: /usr/lib/x86_64-linux-gnu/libtbbmalloc.so
@@ -192,8 +191,8 @@ src/CMakeFiles/ceresBA_LIBS.dir/build: ../lib/libceresBA_LIBS.so
 
 .PHONY : src/CMakeFiles/ceresBA_LIBS.dir/build
 
-src/CMakeFiles/ceresBA_LIBS.dir/requires: src/CMakeFiles/ceresBA_LIBS.dir/ceresBA.cc.o.requires
-src/CMakeFiles/ceresBA_LIBS.dir/requires: src/CMakeFiles/ceresBA_LIBS.dir/PnPproblem.cc.o.requires
+src/CMakeFiles/ceresBA_LIBS.dir/requires: src/CMakeFiles/ceresBA_LIBS.dir/CeresCost/CostFunctions.cc.o.requires
+src/CMakeFiles/ceresBA_LIBS.dir/requires: src/CMakeFiles/ceresBA_LIBS.dir/Util/GenData.cc.o.requires
 
 .PHONY : src/CMakeFiles/ceresBA_LIBS.dir/requires
 

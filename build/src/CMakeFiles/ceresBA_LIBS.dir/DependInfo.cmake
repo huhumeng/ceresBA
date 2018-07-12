@@ -4,8 +4,8 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/ling/slam_ws/mycode/ceresBA/src/PnPproblem.cc" "/home/ling/slam_ws/mycode/ceresBA/build/src/CMakeFiles/ceresBA_LIBS.dir/PnPproblem.cc.o"
-  "/home/ling/slam_ws/mycode/ceresBA/src/ceresBA.cc" "/home/ling/slam_ws/mycode/ceresBA/build/src/CMakeFiles/ceresBA_LIBS.dir/ceresBA.cc.o"
+  "/home/ling/slam_ws/mycode/ceresBA/src/CeresCost/CostFunctions.cc" "/home/ling/slam_ws/mycode/ceresBA/build/src/CMakeFiles/ceresBA_LIBS.dir/CeresCost/CostFunctions.cc.o"
+  "/home/ling/slam_ws/mycode/ceresBA/src/Util/GenData.cc" "/home/ling/slam_ws/mycode/ceresBA/build/src/CMakeFiles/ceresBA_LIBS.dir/Util/GenData.cc.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
@@ -15,6 +15,9 @@ set(CMAKE_CXX_TARGET_INCLUDE_PATH
   "/opt/ros/kinetic/include/opencv-3.3.1-dev/opencv"
   "/usr/include/eigen3"
   "../include"
+  "../include/Util"
+  "../include/CeresCost"
+  "../include/Problem"
   "/usr/local/include"
   )
 

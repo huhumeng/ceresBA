@@ -111,46 +111,46 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
-test/CMakeFiles/testBA.dir/rule:
-	cd /home/ling/slam_ws/mycode/ceresBA/build && $(MAKE) -f CMakeFiles/Makefile2 test/CMakeFiles/testBA.dir/rule
-.PHONY : test/CMakeFiles/testBA.dir/rule
+test/CMakeFiles/testICPOptim.dir/rule:
+	cd /home/ling/slam_ws/mycode/ceresBA/build && $(MAKE) -f CMakeFiles/Makefile2 test/CMakeFiles/testICPOptim.dir/rule
+.PHONY : test/CMakeFiles/testICPOptim.dir/rule
 
 # Convenience name for target.
-testBA: test/CMakeFiles/testBA.dir/rule
+testICPOptim: test/CMakeFiles/testICPOptim.dir/rule
 
-.PHONY : testBA
+.PHONY : testICPOptim
 
 # fast build rule for target.
-testBA/fast:
-	cd /home/ling/slam_ws/mycode/ceresBA/build && $(MAKE) -f test/CMakeFiles/testBA.dir/build.make test/CMakeFiles/testBA.dir/build
-.PHONY : testBA/fast
+testICPOptim/fast:
+	cd /home/ling/slam_ws/mycode/ceresBA/build && $(MAKE) -f test/CMakeFiles/testICPOptim.dir/build.make test/CMakeFiles/testICPOptim.dir/build
+.PHONY : testICPOptim/fast
 
-testBA.o: testBA.cc.o
+testICPOptim.o: testICPOptim.cc.o
 
-.PHONY : testBA.o
+.PHONY : testICPOptim.o
 
 # target to build an object file
-testBA.cc.o:
-	cd /home/ling/slam_ws/mycode/ceresBA/build && $(MAKE) -f test/CMakeFiles/testBA.dir/build.make test/CMakeFiles/testBA.dir/testBA.cc.o
-.PHONY : testBA.cc.o
+testICPOptim.cc.o:
+	cd /home/ling/slam_ws/mycode/ceresBA/build && $(MAKE) -f test/CMakeFiles/testICPOptim.dir/build.make test/CMakeFiles/testICPOptim.dir/testICPOptim.cc.o
+.PHONY : testICPOptim.cc.o
 
-testBA.i: testBA.cc.i
+testICPOptim.i: testICPOptim.cc.i
 
-.PHONY : testBA.i
+.PHONY : testICPOptim.i
 
 # target to preprocess a source file
-testBA.cc.i:
-	cd /home/ling/slam_ws/mycode/ceresBA/build && $(MAKE) -f test/CMakeFiles/testBA.dir/build.make test/CMakeFiles/testBA.dir/testBA.cc.i
-.PHONY : testBA.cc.i
+testICPOptim.cc.i:
+	cd /home/ling/slam_ws/mycode/ceresBA/build && $(MAKE) -f test/CMakeFiles/testICPOptim.dir/build.make test/CMakeFiles/testICPOptim.dir/testICPOptim.cc.i
+.PHONY : testICPOptim.cc.i
 
-testBA.s: testBA.cc.s
+testICPOptim.s: testICPOptim.cc.s
 
-.PHONY : testBA.s
+.PHONY : testICPOptim.s
 
 # target to generate assembly for a file
-testBA.cc.s:
-	cd /home/ling/slam_ws/mycode/ceresBA/build && $(MAKE) -f test/CMakeFiles/testBA.dir/build.make test/CMakeFiles/testBA.dir/testBA.cc.s
-.PHONY : testBA.cc.s
+testICPOptim.cc.s:
+	cd /home/ling/slam_ws/mycode/ceresBA/build && $(MAKE) -f test/CMakeFiles/testICPOptim.dir/build.make test/CMakeFiles/testICPOptim.dir/testICPOptim.cc.s
+.PHONY : testICPOptim.cc.s
 
 # Help Target
 help:
@@ -160,10 +160,10 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... testBA"
-	@echo "... testBA.o"
-	@echo "... testBA.i"
-	@echo "... testBA.s"
+	@echo "... testICPOptim"
+	@echo "... testICPOptim.o"
+	@echo "... testICPOptim.i"
+	@echo "... testICPOptim.s"
 .PHONY : help
 
 

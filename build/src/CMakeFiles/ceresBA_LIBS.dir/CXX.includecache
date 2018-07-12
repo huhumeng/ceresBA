@@ -6,11 +6,7 @@
 
 #IncludeRegexTransform: 
 
-../include/PnPproblem.h
-ceres/ceres.h
--
-
-../include/ceresBA.h
+../include/CeresCost/CostFunctions.h
 ceres/ceres.h
 -
 Eigen/Core
@@ -18,13 +14,27 @@ Eigen/Core
 ceres/rotation.h
 -
 
-/home/ling/slam_ws/mycode/ceresBA/src/PnPproblem.cc
-PnPproblem.h
-/home/ling/slam_ws/mycode/ceresBA/src/PnPproblem.h
+../include/Util/GenData.h
+Random.h
+../include/Util/Random.h
+ceres/ceres.h
+-
+Eigen/Core
+-
+ceres/rotation.h
+-
 
-/home/ling/slam_ws/mycode/ceresBA/src/ceresBA.cc
-ceresBA.h
-/home/ling/slam_ws/mycode/ceresBA/src/ceresBA.h
+../include/Util/Random.h
+random
+-
+
+/home/ling/slam_ws/mycode/ceresBA/src/CeresCost/CostFunctions.cc
+CostFunctions.h
+/home/ling/slam_ws/mycode/ceresBA/src/CeresCost/CostFunctions.h
+
+/home/ling/slam_ws/mycode/ceresBA/src/Util/GenData.cc
+GenData.h
+/home/ling/slam_ws/mycode/ceresBA/src/Util/GenData.h
 
 /usr/include/eigen3/Eigen/Cholesky
 Core

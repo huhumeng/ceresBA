@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/ceresBA_LIBS.dir/ceresBA.cc.o"
-  "CMakeFiles/ceresBA_LIBS.dir/PnPproblem.cc.o"
+  "CMakeFiles/ceresBA_LIBS.dir/CeresCost/CostFunctions.cc.o"
+  "CMakeFiles/ceresBA_LIBS.dir/Util/GenData.cc.o"
   "../../lib/libceresBA_LIBS.pdb"
   "../../lib/libceresBA_LIBS.so"
 )

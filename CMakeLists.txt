@@ -2,8 +2,9 @@ cmake_minimum_required(VERSION 2.8)
 
 project(CeresBA)
 
-set(CMAKE_CXX_FLAGS_RELEASE "$ENV{CXXFLAGS} -O3 -Wall")
-set(CMAKE_CXX_FLAGS "-std=c++11 ${CMAKE_CXX_FLAGS} -g -ftest-coverage -fprofile-arcs -Wno-deprecated -pthread")
+set(CMAKE_BUILD_TYPE "Release")
+set(CMAKE_CXX_FLAGS "-std=c++11")
+set(CMAKE_CXX_FLAGS_RELEASE "-O3 -Wall -g")
 
 set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_SOURCE_DIR}/bin)
 set(CMAKE_LIBRARY_OUTPUT_DIRECTORY ${CMAKE_SOURCE_DIR}/lib)
@@ -22,13 +23,16 @@ include_directories(${Ceres_INCLUDE_DIRS})
 include_directories(
     /usr/include/eigen3
     ${CMAKE_SOURCE_DIR}/include
+    ${CMAKE_SOURCE_DIR}/include/Util
+    ${CMAKE_SOURCE_DIR}/include/CeresCost
+    ${CMAKE_SOURCE_DIR}/include/Problem
 )
 
 set(
     Third_LIBS
     ${OpenCV_LIBS}
-    ${GLOG_LIBRARIES}
     ${CERES_LIBRARIES}
+    ${GLOG_LIBRARIES}
 )
 
 
