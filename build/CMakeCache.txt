@@ -114,7 +114,7 @@ CMAKE_OBJCOPY:FILEPATH=/usr/bin/objcopy
 CMAKE_OBJDUMP:FILEPATH=/usr/bin/objdump
 
 //Value Computed by CMake
-CMAKE_PROJECT_NAME:STATIC=DirectDenseRoad
+CMAKE_PROJECT_NAME:STATIC=CeresBA
 
 //Path to a program.
 CMAKE_RANLIB:FILEPATH=/usr/bin/ranlib
@@ -164,6 +164,12 @@ CMAKE_STRIP:FILEPATH=/usr/bin/strip
 // during the make.  This is useful for debugging only. With Visual
 // Studio IDE projects all commands are done without /nologo.
 CMAKE_VERBOSE_MAKEFILE:BOOL=FALSE
+
+//Value Computed by CMake
+CeresBA_BINARY_DIR:STATIC=/home/ling/slam_ws/mycode/ceresBA/build
+
+//Value Computed by CMake
+CeresBA_SOURCE_DIR:STATIC=/home/ling/slam_ws/mycode/ceresBA
 
 //The directory containing a CMake configuration file for Ceres.
 Ceres_DIR:PATH=/usr/local/lib/cmake/Ceres

@@ -4,6 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
+  "/home/ling/slam_ws/mycode/ceresBA/src/PnPproblem.cc" "/home/ling/slam_ws/mycode/ceresBA/build/src/CMakeFiles/ceresBA_LIBS.dir/PnPproblem.cc.o"
   "/home/ling/slam_ws/mycode/ceresBA/src/ceresBA.cc" "/home/ling/slam_ws/mycode/ceresBA/build/src/CMakeFiles/ceresBA_LIBS.dir/ceresBA.cc.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")

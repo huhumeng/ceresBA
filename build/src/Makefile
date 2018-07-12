@@ -125,6 +125,33 @@ ceresBA_LIBS/fast:
 	cd /home/ling/slam_ws/mycode/ceresBA/build && $(MAKE) -f src/CMakeFiles/ceresBA_LIBS.dir/build.make src/CMakeFiles/ceresBA_LIBS.dir/build
 .PHONY : ceresBA_LIBS/fast
 
+PnPproblem.o: PnPproblem.cc.o
+
+.PHONY : PnPproblem.o
+
+# target to build an object file
+PnPproblem.cc.o:
+	cd /home/ling/slam_ws/mycode/ceresBA/build && $(MAKE) -f src/CMakeFiles/ceresBA_LIBS.dir/build.make src/CMakeFiles/ceresBA_LIBS.dir/PnPproblem.cc.o
+.PHONY : PnPproblem.cc.o
+
+PnPproblem.i: PnPproblem.cc.i
+
+.PHONY : PnPproblem.i
+
+# target to preprocess a source file
+PnPproblem.cc.i:
+	cd /home/ling/slam_ws/mycode/ceresBA/build && $(MAKE) -f src/CMakeFiles/ceresBA_LIBS.dir/build.make src/CMakeFiles/ceresBA_LIBS.dir/PnPproblem.cc.i
+.PHONY : PnPproblem.cc.i
+
+PnPproblem.s: PnPproblem.cc.s
+
+.PHONY : PnPproblem.s
+
+# target to generate assembly for a file
+PnPproblem.cc.s:
+	cd /home/ling/slam_ws/mycode/ceresBA/build && $(MAKE) -f src/CMakeFiles/ceresBA_LIBS.dir/build.make src/CMakeFiles/ceresBA_LIBS.dir/PnPproblem.cc.s
+.PHONY : PnPproblem.cc.s
+
 ceresBA.o: ceresBA.cc.o
 
 .PHONY : ceresBA.o
@@ -161,6 +188,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... ceresBA_LIBS"
+	@echo "... PnPproblem.o"
+	@echo "... PnPproblem.i"
+	@echo "... PnPproblem.s"
 	@echo "... ceresBA.o"
 	@echo "... ceresBA.i"
 	@echo "... ceresBA.s"

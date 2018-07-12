@@ -1,6 +1,7 @@
 add_library(
     ceresBA_LIBS
     ceresBA.cc
+    PnPproblem.cc
 )
 
 target_link_libraries(

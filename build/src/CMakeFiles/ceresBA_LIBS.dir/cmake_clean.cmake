@@ -1,5 +1,6 @@
 file(REMOVE_RECURSE
   "CMakeFiles/ceresBA_LIBS.dir/ceresBA.cc.o"
+  "CMakeFiles/ceresBA_LIBS.dir/PnPproblem.cc.o"
   "libceresBA_LIBS.pdb"
   "libceresBA_LIBS.a"
 )

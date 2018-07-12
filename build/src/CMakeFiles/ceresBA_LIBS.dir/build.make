@@ -81,17 +81,43 @@ src/CMakeFiles/ceresBA_LIBS.dir/ceresBA.cc.o.provides: src/CMakeFiles/ceresBA_LI
 src/CMakeFiles/ceresBA_LIBS.dir/ceresBA.cc.o.provides.build: src/CMakeFiles/ceresBA_LIBS.dir/ceresBA.cc.o
 
 
+src/CMakeFiles/ceresBA_LIBS.dir/PnPproblem.cc.o: src/CMakeFiles/ceresBA_LIBS.dir/flags.make
+src/CMakeFiles/ceresBA_LIBS.dir/PnPproblem.cc.o: ../src/PnPproblem.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ling/slam_ws/mycode/ceresBA/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object src/CMakeFiles/ceresBA_LIBS.dir/PnPproblem.cc.o"
+	cd /home/ling/slam_ws/mycode/ceresBA/build/src && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ceresBA_LIBS.dir/PnPproblem.cc.o -c /home/ling/slam_ws/mycode/ceresBA/src/PnPproblem.cc
+
+src/CMakeFiles/ceresBA_LIBS.dir/PnPproblem.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ceresBA_LIBS.dir/PnPproblem.cc.i"
+	cd /home/ling/slam_ws/mycode/ceresBA/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ling/slam_ws/mycode/ceresBA/src/PnPproblem.cc > CMakeFiles/ceresBA_LIBS.dir/PnPproblem.cc.i
+
+src/CMakeFiles/ceresBA_LIBS.dir/PnPproblem.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ceresBA_LIBS.dir/PnPproblem.cc.s"
+	cd /home/ling/slam_ws/mycode/ceresBA/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ling/slam_ws/mycode/ceresBA/src/PnPproblem.cc -o CMakeFiles/ceresBA_LIBS.dir/PnPproblem.cc.s
+
+src/CMakeFiles/ceresBA_LIBS.dir/PnPproblem.cc.o.requires:
+
+.PHONY : src/CMakeFiles/ceresBA_LIBS.dir/PnPproblem.cc.o.requires
+
+src/CMakeFiles/ceresBA_LIBS.dir/PnPproblem.cc.o.provides: src/CMakeFiles/ceresBA_LIBS.dir/PnPproblem.cc.o.requires
+	$(MAKE) -f src/CMakeFiles/ceresBA_LIBS.dir/build.make src/CMakeFiles/ceresBA_LIBS.dir/PnPproblem.cc.o.provides.build
+.PHONY : src/CMakeFiles/ceresBA_LIBS.dir/PnPproblem.cc.o.provides
+
+src/CMakeFiles/ceresBA_LIBS.dir/PnPproblem.cc.o.provides.build: src/CMakeFiles/ceresBA_LIBS.dir/PnPproblem.cc.o
+
+
 # Object files for target ceresBA_LIBS
 ceresBA_LIBS_OBJECTS = \
-"CMakeFiles/ceresBA_LIBS.dir/ceresBA.cc.o"
+"CMakeFiles/ceresBA_LIBS.dir/ceresBA.cc.o" \
+"CMakeFiles/ceresBA_LIBS.dir/PnPproblem.cc.o"
 
 # External object files for target ceresBA_LIBS
 ceresBA_LIBS_EXTERNAL_OBJECTS =
 
 src/libceresBA_LIBS.a: src/CMakeFiles/ceresBA_LIBS.dir/ceresBA.cc.o
+src/libceresBA_LIBS.a: src/CMakeFiles/ceresBA_LIBS.dir/PnPproblem.cc.o
 src/libceresBA_LIBS.a: src/CMakeFiles/ceresBA_LIBS.dir/build.make
 src/libceresBA_LIBS.a: src/CMakeFiles/ceresBA_LIBS.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/ling/slam_ws/mycode/ceresBA/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX static library libceresBA_LIBS.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/ling/slam_ws/mycode/ceresBA/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX static library libceresBA_LIBS.a"
 	cd /home/ling/slam_ws/mycode/ceresBA/build/src && $(CMAKE_COMMAND) -P CMakeFiles/ceresBA_LIBS.dir/cmake_clean_target.cmake
 	cd /home/ling/slam_ws/mycode/ceresBA/build/src && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/ceresBA_LIBS.dir/link.txt --verbose=$(VERBOSE)
 
@@ -101,6 +127,7 @@ src/CMakeFiles/ceresBA_LIBS.dir/build: src/libceresBA_LIBS.a
 .PHONY : src/CMakeFiles/ceresBA_LIBS.dir/build
 
 src/CMakeFiles/ceresBA_LIBS.dir/requires: src/CMakeFiles/ceresBA_LIBS.dir/ceresBA.cc.o.requires
+src/CMakeFiles/ceresBA_LIBS.dir/requires: src/CMakeFiles/ceresBA_LIBS.dir/PnPproblem.cc.o.requires
 
 .PHONY : src/CMakeFiles/ceresBA_LIBS.dir/requires
 
