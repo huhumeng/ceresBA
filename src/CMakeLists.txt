@@ -1,5 +1,5 @@
 add_library(
-    ceresBA_LIBS
+    ceresBA_LIBS SHARED
     ceresBA.cc
     PnPproblem.cc
 )

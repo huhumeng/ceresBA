@@ -113,16 +113,82 @@ ceresBA_LIBS_OBJECTS = \
 # External object files for target ceresBA_LIBS
 ceresBA_LIBS_EXTERNAL_OBJECTS =
 
-src/libceresBA_LIBS.a: src/CMakeFiles/ceresBA_LIBS.dir/ceresBA.cc.o
-src/libceresBA_LIBS.a: src/CMakeFiles/ceresBA_LIBS.dir/PnPproblem.cc.o
-src/libceresBA_LIBS.a: src/CMakeFiles/ceresBA_LIBS.dir/build.make
-src/libceresBA_LIBS.a: src/CMakeFiles/ceresBA_LIBS.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/ling/slam_ws/mycode/ceresBA/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX static library libceresBA_LIBS.a"
-	cd /home/ling/slam_ws/mycode/ceresBA/build/src && $(CMAKE_COMMAND) -P CMakeFiles/ceresBA_LIBS.dir/cmake_clean_target.cmake
+../lib/libceresBA_LIBS.so: src/CMakeFiles/ceresBA_LIBS.dir/ceresBA.cc.o
+../lib/libceresBA_LIBS.so: src/CMakeFiles/ceresBA_LIBS.dir/PnPproblem.cc.o
+../lib/libceresBA_LIBS.so: src/CMakeFiles/ceresBA_LIBS.dir/build.make
+../lib/libceresBA_LIBS.so: /opt/ros/kinetic/lib/x86_64-linux-gnu/libopencv_stitching3.so.3.3.1
+../lib/libceresBA_LIBS.so: /opt/ros/kinetic/lib/x86_64-linux-gnu/libopencv_superres3.so.3.3.1
+../lib/libceresBA_LIBS.so: /opt/ros/kinetic/lib/x86_64-linux-gnu/libopencv_videostab3.so.3.3.1
+../lib/libceresBA_LIBS.so: /opt/ros/kinetic/lib/x86_64-linux-gnu/libopencv_aruco3.so.3.3.1
+../lib/libceresBA_LIBS.so: /opt/ros/kinetic/lib/x86_64-linux-gnu/libopencv_bgsegm3.so.3.3.1
+../lib/libceresBA_LIBS.so: /opt/ros/kinetic/lib/x86_64-linux-gnu/libopencv_bioinspired3.so.3.3.1
+../lib/libceresBA_LIBS.so: /opt/ros/kinetic/lib/x86_64-linux-gnu/libopencv_ccalib3.so.3.3.1
+../lib/libceresBA_LIBS.so: /opt/ros/kinetic/lib/x86_64-linux-gnu/libopencv_cvv3.so.3.3.1
+../lib/libceresBA_LIBS.so: /opt/ros/kinetic/lib/x86_64-linux-gnu/libopencv_dpm3.so.3.3.1
+../lib/libceresBA_LIBS.so: /opt/ros/kinetic/lib/x86_64-linux-gnu/libopencv_face3.so.3.3.1
+../lib/libceresBA_LIBS.so: /opt/ros/kinetic/lib/x86_64-linux-gnu/libopencv_fuzzy3.so.3.3.1
+../lib/libceresBA_LIBS.so: /opt/ros/kinetic/lib/x86_64-linux-gnu/libopencv_hdf3.so.3.3.1
+../lib/libceresBA_LIBS.so: /opt/ros/kinetic/lib/x86_64-linux-gnu/libopencv_img_hash3.so.3.3.1
+../lib/libceresBA_LIBS.so: /opt/ros/kinetic/lib/x86_64-linux-gnu/libopencv_line_descriptor3.so.3.3.1
+../lib/libceresBA_LIBS.so: /opt/ros/kinetic/lib/x86_64-linux-gnu/libopencv_optflow3.so.3.3.1
+../lib/libceresBA_LIBS.so: /opt/ros/kinetic/lib/x86_64-linux-gnu/libopencv_reg3.so.3.3.1
+../lib/libceresBA_LIBS.so: /opt/ros/kinetic/lib/x86_64-linux-gnu/libopencv_rgbd3.so.3.3.1
+../lib/libceresBA_LIBS.so: /opt/ros/kinetic/lib/x86_64-linux-gnu/libopencv_saliency3.so.3.3.1
+../lib/libceresBA_LIBS.so: /opt/ros/kinetic/lib/x86_64-linux-gnu/libopencv_stereo3.so.3.3.1
+../lib/libceresBA_LIBS.so: /opt/ros/kinetic/lib/x86_64-linux-gnu/libopencv_structured_light3.so.3.3.1
+../lib/libceresBA_LIBS.so: /opt/ros/kinetic/lib/x86_64-linux-gnu/libopencv_surface_matching3.so.3.3.1
+../lib/libceresBA_LIBS.so: /opt/ros/kinetic/lib/x86_64-linux-gnu/libopencv_tracking3.so.3.3.1
+../lib/libceresBA_LIBS.so: /opt/ros/kinetic/lib/x86_64-linux-gnu/libopencv_xfeatures2d3.so.3.3.1
+../lib/libceresBA_LIBS.so: /opt/ros/kinetic/lib/x86_64-linux-gnu/libopencv_ximgproc3.so.3.3.1
+../lib/libceresBA_LIBS.so: /opt/ros/kinetic/lib/x86_64-linux-gnu/libopencv_xobjdetect3.so.3.3.1
+../lib/libceresBA_LIBS.so: /opt/ros/kinetic/lib/x86_64-linux-gnu/libopencv_xphoto3.so.3.3.1
+../lib/libceresBA_LIBS.so: /usr/lib/x86_64-linux-gnu/libglog.so
+../lib/libceresBA_LIBS.so: /usr/local/lib/libceres.a
+../lib/libceresBA_LIBS.so: /opt/ros/kinetic/lib/x86_64-linux-gnu/libopencv_shape3.so.3.3.1
+../lib/libceresBA_LIBS.so: /opt/ros/kinetic/lib/x86_64-linux-gnu/libopencv_photo3.so.3.3.1
+../lib/libceresBA_LIBS.so: /opt/ros/kinetic/lib/x86_64-linux-gnu/libopencv_datasets3.so.3.3.1
+../lib/libceresBA_LIBS.so: /opt/ros/kinetic/lib/x86_64-linux-gnu/libopencv_plot3.so.3.3.1
+../lib/libceresBA_LIBS.so: /opt/ros/kinetic/lib/x86_64-linux-gnu/libopencv_text3.so.3.3.1
+../lib/libceresBA_LIBS.so: /opt/ros/kinetic/lib/x86_64-linux-gnu/libopencv_dnn3.so.3.3.1
+../lib/libceresBA_LIBS.so: /opt/ros/kinetic/lib/x86_64-linux-gnu/libopencv_ml3.so.3.3.1
+../lib/libceresBA_LIBS.so: /opt/ros/kinetic/lib/x86_64-linux-gnu/libopencv_video3.so.3.3.1
+../lib/libceresBA_LIBS.so: /opt/ros/kinetic/lib/x86_64-linux-gnu/libopencv_calib3d3.so.3.3.1
+../lib/libceresBA_LIBS.so: /opt/ros/kinetic/lib/x86_64-linux-gnu/libopencv_features2d3.so.3.3.1
+../lib/libceresBA_LIBS.so: /opt/ros/kinetic/lib/x86_64-linux-gnu/libopencv_highgui3.so.3.3.1
+../lib/libceresBA_LIBS.so: /opt/ros/kinetic/lib/x86_64-linux-gnu/libopencv_videoio3.so.3.3.1
+../lib/libceresBA_LIBS.so: /opt/ros/kinetic/lib/x86_64-linux-gnu/libopencv_viz3.so.3.3.1
+../lib/libceresBA_LIBS.so: /opt/ros/kinetic/lib/x86_64-linux-gnu/libopencv_phase_unwrapping3.so.3.3.1
+../lib/libceresBA_LIBS.so: /opt/ros/kinetic/lib/x86_64-linux-gnu/libopencv_flann3.so.3.3.1
+../lib/libceresBA_LIBS.so: /opt/ros/kinetic/lib/x86_64-linux-gnu/libopencv_imgcodecs3.so.3.3.1
+../lib/libceresBA_LIBS.so: /opt/ros/kinetic/lib/x86_64-linux-gnu/libopencv_objdetect3.so.3.3.1
+../lib/libceresBA_LIBS.so: /opt/ros/kinetic/lib/x86_64-linux-gnu/libopencv_imgproc3.so.3.3.1
+../lib/libceresBA_LIBS.so: /opt/ros/kinetic/lib/x86_64-linux-gnu/libopencv_core3.so.3.3.1
+../lib/libceresBA_LIBS.so: /usr/lib/x86_64-linux-gnu/libglog.so
+../lib/libceresBA_LIBS.so: /usr/lib/x86_64-linux-gnu/libgflags.so
+../lib/libceresBA_LIBS.so: /usr/lib/x86_64-linux-gnu/libspqr.so
+../lib/libceresBA_LIBS.so: /usr/lib/x86_64-linux-gnu/libtbbmalloc.so
+../lib/libceresBA_LIBS.so: /usr/lib/x86_64-linux-gnu/libtbb.so
+../lib/libceresBA_LIBS.so: /usr/lib/x86_64-linux-gnu/libcholmod.so
+../lib/libceresBA_LIBS.so: /usr/lib/x86_64-linux-gnu/libccolamd.so
+../lib/libceresBA_LIBS.so: /usr/lib/x86_64-linux-gnu/libcamd.so
+../lib/libceresBA_LIBS.so: /usr/lib/x86_64-linux-gnu/libcolamd.so
+../lib/libceresBA_LIBS.so: /usr/lib/x86_64-linux-gnu/libamd.so
+../lib/libceresBA_LIBS.so: /usr/lib/liblapack.so
+../lib/libceresBA_LIBS.so: /usr/lib/libblas.so
+../lib/libceresBA_LIBS.so: /usr/lib/x86_64-linux-gnu/libsuitesparseconfig.so
+../lib/libceresBA_LIBS.so: /usr/lib/x86_64-linux-gnu/librt.so
+../lib/libceresBA_LIBS.so: /usr/lib/x86_64-linux-gnu/libcxsparse.so
+../lib/libceresBA_LIBS.so: /usr/lib/liblapack.so
+../lib/libceresBA_LIBS.so: /usr/lib/libblas.so
+../lib/libceresBA_LIBS.so: /usr/lib/x86_64-linux-gnu/libsuitesparseconfig.so
+../lib/libceresBA_LIBS.so: /usr/lib/x86_64-linux-gnu/librt.so
+../lib/libceresBA_LIBS.so: /usr/lib/x86_64-linux-gnu/libcxsparse.so
+../lib/libceresBA_LIBS.so: src/CMakeFiles/ceresBA_LIBS.dir/link.txt
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/ling/slam_ws/mycode/ceresBA/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX shared library ../../lib/libceresBA_LIBS.so"
 	cd /home/ling/slam_ws/mycode/ceresBA/build/src && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/ceresBA_LIBS.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
-src/CMakeFiles/ceresBA_LIBS.dir/build: src/libceresBA_LIBS.a
+src/CMakeFiles/ceresBA_LIBS.dir/build: ../lib/libceresBA_LIBS.so
 
 .PHONY : src/CMakeFiles/ceresBA_LIBS.dir/build
 

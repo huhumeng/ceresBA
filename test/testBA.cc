@@ -25,7 +25,9 @@ int main(){
 
     double initR[3] = {0.0, 0.0, 1.0};
     double initT[3] = {0.0, 0.0, 0.0};
+    
     ceres::Problem problem;
+    
     for(int i=0;i<gener.p3ds.size();++i)
     {
         ceres::CostFunction* costfunction = 
@@ -36,9 +38,9 @@ int main(){
     }
     
     ceres::Solver::Options option;
-    option.linear_solver_type=ceres::DENSE_SCHUR;
+    option.linear_solver_type = ceres::DENSE_SCHUR;
     //输出迭代信息到屏幕
-    option.minimizer_progress_to_stdout=true;
+    option.minimizer_progress_to_stdout = true;
     //显示优化信息
     ceres::Solver::Summary summary;
     //开始求解
@@ -61,7 +63,8 @@ int main(){
     // for(size_t i=0; i<gener.p3ds.size(); ++i){
     //     cout << "Pc 3D show be:\n" << q*gener.p3ds[i] + translat  - gener.pc3ds[i] << endl;
     // }
-
+    cout << initR[0] << ", " << initR[1] << ", " << initR[2] << endl;
+    cout << initT[0] << ", " << initT[1] << ", " << initT[2] << endl;
 
     return 0;
 }

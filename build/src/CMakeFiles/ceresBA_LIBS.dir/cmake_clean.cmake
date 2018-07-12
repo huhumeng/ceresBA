@@ -1,8 +1,8 @@
 file(REMOVE_RECURSE
   "CMakeFiles/ceresBA_LIBS.dir/ceresBA.cc.o"
   "CMakeFiles/ceresBA_LIBS.dir/PnPproblem.cc.o"
-  "libceresBA_LIBS.pdb"
-  "libceresBA_LIBS.a"
+  "../../lib/libceresBA_LIBS.pdb"
+  "../../lib/libceresBA_LIBS.so"
 )
 
 # Per-language clean rules from dependency scanning.
