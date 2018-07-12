@@ -2,6 +2,7 @@
 
 #include <random>
 #include <Eigen/Core>
+#include <ceres/rotation.h>
 
 inline double gaussion(double miu, double sigma){ 
     static std::default_random_engine generator;
@@ -37,4 +38,50 @@ public:
 
 private:
     double fx, fy, cx, cy;
+};
+
+class generatePointAndPose{
+
+public:
+    EIGEN_MAKE_ALIGNED_OPERATOR_NEW
+
+    std::vector<Eigen::Vector3d> p3ds, pc3ds;
+    std::vector<Eigen::Vector3d> p2ds;
+    std::vector<unsigned char> status;
+    
+    Eigen::Vector3d r, t;
+    
+    // --------------------------------------------------
+    void setPose(double* rotation, double* translation){
+        r = Eigen::Vector3d(rotation);
+        t = Eigen::Vector3d(translation);
+    }
+
+    void genWorldPoint(){
+        for(size_t i=0; i<point_num; ++i){
+            Eigen::Vector3d p(
+                uniform(0.0, 20.0), uniform(0.0, 20.0), uniform(0.0, 20.0)
+            );
+            p3ds.push_back(p);
+        }
+    }
+
+    void genCameraPoint(){
+        
+        for(size_t i=0; i<point_num; ++i){
+            double pcamera[3];
+            ceres::AngleAxisRotatePoint(r.data(), p3ds[i].data(), pcamera);
+            Eigen::Vector3d pc(pcamera);
+            pc += t;
+            pc3ds.push_back(pc);
+        }
+        
+    }
+
+    void genAddPoseNoise(){
+        
+    }
+
+private:
+    const size_t point_num = 30;
 };

@@ -11,6 +11,8 @@ set(CMAKE_LIBRARY_OUTPUT_DIRECTORY ${CMAKE_SOURCE_DIR}/lib)
 find_package(OpenCV REQUIRED)
 include_directories(${OpenCV_INCLUDE_DIRS})
 
+find_package(Glog REQUIRED)
+
 find_package(Ceres REQUIRED)
 include_directories(${Ceres_INCLUDE_DIRS})
 
