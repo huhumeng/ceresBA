@@ -63,12 +63,12 @@ CMAKE_BINARY_DIR = /home/ling/slam_ws/mycode/ceresBA/build
 # Directory level rules for directory src
 
 # Convenience name for "all" pass in the directory.
-src/all:
+src/all: src/CMakeFiles/ceresBA_LIBS.dir/all
 
 .PHONY : src/all
 
 # Convenience name for "clean" pass in the directory.
-src/clean:
+src/clean: src/CMakeFiles/ceresBA_LIBS.dir/clean
 
 .PHONY : src/clean
 
@@ -76,6 +76,98 @@ src/clean:
 src/preinstall:
 
 .PHONY : src/preinstall
+
+#=============================================================================
+# Target rules for target src/CMakeFiles/ceresBA_LIBS.dir
+
+# All Build rule for target.
+src/CMakeFiles/ceresBA_LIBS.dir/all:
+	$(MAKE) -f src/CMakeFiles/ceresBA_LIBS.dir/build.make src/CMakeFiles/ceresBA_LIBS.dir/depend
+	$(MAKE) -f src/CMakeFiles/ceresBA_LIBS.dir/build.make src/CMakeFiles/ceresBA_LIBS.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ling/slam_ws/mycode/ceresBA/build/CMakeFiles --progress-num=1,2 "Built target ceresBA_LIBS"
+.PHONY : src/CMakeFiles/ceresBA_LIBS.dir/all
+
+# Include target in all.
+all: src/CMakeFiles/ceresBA_LIBS.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+src/CMakeFiles/ceresBA_LIBS.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ling/slam_ws/mycode/ceresBA/build/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 src/CMakeFiles/ceresBA_LIBS.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ling/slam_ws/mycode/ceresBA/build/CMakeFiles 0
+.PHONY : src/CMakeFiles/ceresBA_LIBS.dir/rule
+
+# Convenience name for target.
+ceresBA_LIBS: src/CMakeFiles/ceresBA_LIBS.dir/rule
+
+.PHONY : ceresBA_LIBS
+
+# clean rule for target.
+src/CMakeFiles/ceresBA_LIBS.dir/clean:
+	$(MAKE) -f src/CMakeFiles/ceresBA_LIBS.dir/build.make src/CMakeFiles/ceresBA_LIBS.dir/clean
+.PHONY : src/CMakeFiles/ceresBA_LIBS.dir/clean
+
+# clean rule for target.
+clean: src/CMakeFiles/ceresBA_LIBS.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Directory level rules for directory test
+
+# Convenience name for "all" pass in the directory.
+test/all: test/CMakeFiles/testBA.dir/all
+
+.PHONY : test/all
+
+# Convenience name for "clean" pass in the directory.
+test/clean: test/CMakeFiles/testBA.dir/clean
+
+.PHONY : test/clean
+
+# Convenience name for "preinstall" pass in the directory.
+test/preinstall:
+
+.PHONY : test/preinstall
+
+#=============================================================================
+# Target rules for target test/CMakeFiles/testBA.dir
+
+# All Build rule for target.
+test/CMakeFiles/testBA.dir/all:
+	$(MAKE) -f test/CMakeFiles/testBA.dir/build.make test/CMakeFiles/testBA.dir/depend
+	$(MAKE) -f test/CMakeFiles/testBA.dir/build.make test/CMakeFiles/testBA.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ling/slam_ws/mycode/ceresBA/build/CMakeFiles --progress-num=3,4 "Built target testBA"
+.PHONY : test/CMakeFiles/testBA.dir/all
+
+# Include target in all.
+all: test/CMakeFiles/testBA.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+test/CMakeFiles/testBA.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ling/slam_ws/mycode/ceresBA/build/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 test/CMakeFiles/testBA.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ling/slam_ws/mycode/ceresBA/build/CMakeFiles 0
+.PHONY : test/CMakeFiles/testBA.dir/rule
+
+# Convenience name for target.
+testBA: test/CMakeFiles/testBA.dir/rule
+
+.PHONY : testBA
+
+# clean rule for target.
+test/CMakeFiles/testBA.dir/clean:
+	$(MAKE) -f test/CMakeFiles/testBA.dir/build.make test/CMakeFiles/testBA.dir/clean
+.PHONY : test/CMakeFiles/testBA.dir/clean
+
+# clean rule for target.
+clean: test/CMakeFiles/testBA.dir/clean
+
+.PHONY : clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

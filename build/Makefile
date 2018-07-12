@@ -110,6 +110,32 @@ depend:
 	$(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
+#=============================================================================
+# Target rules for targets named ceresBA_LIBS
+
+# Build rule for target.
+ceresBA_LIBS: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 ceresBA_LIBS
+.PHONY : ceresBA_LIBS
+
+# fast build rule for target.
+ceresBA_LIBS/fast:
+	$(MAKE) -f src/CMakeFiles/ceresBA_LIBS.dir/build.make src/CMakeFiles/ceresBA_LIBS.dir/build
+.PHONY : ceresBA_LIBS/fast
+
+#=============================================================================
+# Target rules for targets named testBA
+
+# Build rule for target.
+testBA: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 testBA
+.PHONY : testBA
+
+# fast build rule for target.
+testBA/fast:
+	$(MAKE) -f test/CMakeFiles/testBA.dir/build.make test/CMakeFiles/testBA.dir/build
+.PHONY : testBA/fast
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -118,6 +144,8 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
+	@echo "... ceresBA_LIBS"
+	@echo "... testBA"
 .PHONY : help
 
 

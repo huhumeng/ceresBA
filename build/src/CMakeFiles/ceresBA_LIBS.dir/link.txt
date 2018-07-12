@@ -1,0 +1,2 @@
+/usr/bin/ar qc libceresBA_LIBS.a  CMakeFiles/ceresBA_LIBS.dir/ceresBA.cc.o
+/usr/bin/ranlib libceresBA_LIBS.a

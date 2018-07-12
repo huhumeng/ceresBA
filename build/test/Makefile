@@ -56,17 +56,6 @@ CMAKE_BINARY_DIR = /home/ling/slam_ws/mycode/ceresBA/build
 #=============================================================================
 # Targets provided globally by CMake.
 
-# Special rule for the target rebuild_cache
-rebuild_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/usr/bin/cmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
-.PHONY : rebuild_cache
-
-# Special rule for the target rebuild_cache
-rebuild_cache/fast: rebuild_cache
-
-.PHONY : rebuild_cache/fast
-
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
@@ -78,16 +67,27 @@ edit_cache/fast: edit_cache
 
 .PHONY : edit_cache/fast
 
+# Special rule for the target rebuild_cache
+rebuild_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
+	/usr/bin/cmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+.PHONY : rebuild_cache
+
+# Special rule for the target rebuild_cache
+rebuild_cache/fast: rebuild_cache
+
+.PHONY : rebuild_cache/fast
+
 # The main all target
 all: cmake_check_build_system
-	cd /home/ling/slam_ws/mycode/ceresBA/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/ling/slam_ws/mycode/ceresBA/build/CMakeFiles /home/ling/slam_ws/mycode/ceresBA/build/src/CMakeFiles/progress.marks
-	cd /home/ling/slam_ws/mycode/ceresBA/build && $(MAKE) -f CMakeFiles/Makefile2 src/all
+	cd /home/ling/slam_ws/mycode/ceresBA/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/ling/slam_ws/mycode/ceresBA/build/CMakeFiles /home/ling/slam_ws/mycode/ceresBA/build/test/CMakeFiles/progress.marks
+	cd /home/ling/slam_ws/mycode/ceresBA/build && $(MAKE) -f CMakeFiles/Makefile2 test/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/ling/slam_ws/mycode/ceresBA/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/ling/slam_ws/mycode/ceresBA/build && $(MAKE) -f CMakeFiles/Makefile2 src/clean
+	cd /home/ling/slam_ws/mycode/ceresBA/build && $(MAKE) -f CMakeFiles/Makefile2 test/clean
 .PHONY : clean
 
 # The main clean target
@@ -97,12 +97,12 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/ling/slam_ws/mycode/ceresBA/build && $(MAKE) -f CMakeFiles/Makefile2 src/preinstall
+	cd /home/ling/slam_ws/mycode/ceresBA/build && $(MAKE) -f CMakeFiles/Makefile2 test/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/ling/slam_ws/mycode/ceresBA/build && $(MAKE) -f CMakeFiles/Makefile2 src/preinstall
+	cd /home/ling/slam_ws/mycode/ceresBA/build && $(MAKE) -f CMakeFiles/Makefile2 test/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
@@ -111,46 +111,46 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
-src/CMakeFiles/ceresBA_LIBS.dir/rule:
-	cd /home/ling/slam_ws/mycode/ceresBA/build && $(MAKE) -f CMakeFiles/Makefile2 src/CMakeFiles/ceresBA_LIBS.dir/rule
-.PHONY : src/CMakeFiles/ceresBA_LIBS.dir/rule
+test/CMakeFiles/testBA.dir/rule:
+	cd /home/ling/slam_ws/mycode/ceresBA/build && $(MAKE) -f CMakeFiles/Makefile2 test/CMakeFiles/testBA.dir/rule
+.PHONY : test/CMakeFiles/testBA.dir/rule
 
 # Convenience name for target.
-ceresBA_LIBS: src/CMakeFiles/ceresBA_LIBS.dir/rule
+testBA: test/CMakeFiles/testBA.dir/rule
 
-.PHONY : ceresBA_LIBS
+.PHONY : testBA
 
 # fast build rule for target.
-ceresBA_LIBS/fast:
-	cd /home/ling/slam_ws/mycode/ceresBA/build && $(MAKE) -f src/CMakeFiles/ceresBA_LIBS.dir/build.make src/CMakeFiles/ceresBA_LIBS.dir/build
-.PHONY : ceresBA_LIBS/fast
+testBA/fast:
+	cd /home/ling/slam_ws/mycode/ceresBA/build && $(MAKE) -f test/CMakeFiles/testBA.dir/build.make test/CMakeFiles/testBA.dir/build
+.PHONY : testBA/fast
 
-ceresBA.o: ceresBA.cc.o
+testBA.o: testBA.cc.o
 
-.PHONY : ceresBA.o
+.PHONY : testBA.o
 
 # target to build an object file
-ceresBA.cc.o:
-	cd /home/ling/slam_ws/mycode/ceresBA/build && $(MAKE) -f src/CMakeFiles/ceresBA_LIBS.dir/build.make src/CMakeFiles/ceresBA_LIBS.dir/ceresBA.cc.o
-.PHONY : ceresBA.cc.o
+testBA.cc.o:
+	cd /home/ling/slam_ws/mycode/ceresBA/build && $(MAKE) -f test/CMakeFiles/testBA.dir/build.make test/CMakeFiles/testBA.dir/testBA.cc.o
+.PHONY : testBA.cc.o
 
-ceresBA.i: ceresBA.cc.i
+testBA.i: testBA.cc.i
 
-.PHONY : ceresBA.i
+.PHONY : testBA.i
 
 # target to preprocess a source file
-ceresBA.cc.i:
-	cd /home/ling/slam_ws/mycode/ceresBA/build && $(MAKE) -f src/CMakeFiles/ceresBA_LIBS.dir/build.make src/CMakeFiles/ceresBA_LIBS.dir/ceresBA.cc.i
-.PHONY : ceresBA.cc.i
+testBA.cc.i:
+	cd /home/ling/slam_ws/mycode/ceresBA/build && $(MAKE) -f test/CMakeFiles/testBA.dir/build.make test/CMakeFiles/testBA.dir/testBA.cc.i
+.PHONY : testBA.cc.i
 
-ceresBA.s: ceresBA.cc.s
+testBA.s: testBA.cc.s
 
-.PHONY : ceresBA.s
+.PHONY : testBA.s
 
 # target to generate assembly for a file
-ceresBA.cc.s:
-	cd /home/ling/slam_ws/mycode/ceresBA/build && $(MAKE) -f src/CMakeFiles/ceresBA_LIBS.dir/build.make src/CMakeFiles/ceresBA_LIBS.dir/ceresBA.cc.s
-.PHONY : ceresBA.cc.s
+testBA.cc.s:
+	cd /home/ling/slam_ws/mycode/ceresBA/build && $(MAKE) -f test/CMakeFiles/testBA.dir/build.make test/CMakeFiles/testBA.dir/testBA.cc.s
+.PHONY : testBA.cc.s
 
 # Help Target
 help:
@@ -158,12 +158,12 @@ help:
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
-	@echo "... rebuild_cache"
 	@echo "... edit_cache"
-	@echo "... ceresBA_LIBS"
-	@echo "... ceresBA.o"
-	@echo "... ceresBA.i"
-	@echo "... ceresBA.s"
+	@echo "... rebuild_cache"
+	@echo "... testBA"
+	@echo "... testBA.o"
+	@echo "... testBA.i"
+	@echo "... testBA.s"
 .PHONY : help
 
 
