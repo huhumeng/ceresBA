@@ -18,6 +18,9 @@ int main(){
     double initR[3] = {1.1, 1.9, 3.0};
     double initT[3] = {3.2, 2.1, 1.1};
 
+    // Eigen::Quaterniond q(1.0, 0, 0, 0);
+    // cout << q.coeffs() << endl;
+
 #if OPTIMIZE_ONLY_POSE   
     PnPproblem problem(gener.p3ds, gener.p2ds, initR, initT);
 #else
