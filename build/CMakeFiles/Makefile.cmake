@@ -67,6 +67,7 @@ set(CMAKE_MAKEFILE_PRODUCTS
 set(CMAKE_DEPEND_INFO_FILES
   "src/CMakeFiles/ceresBA_LIBS.dir/DependInfo.cmake"
   "test/CMakeFiles/testICPOptim.dir/DependInfo.cmake"
-  "test/CMakeFiles/testPnPOptim.dir/DependInfo.cmake"
   "test/CMakeFiles/testPnPSE3Optim.dir/DependInfo.cmake"
+  "test/CMakeFiles/testQuickly.dir/DependInfo.cmake"
+  "test/CMakeFiles/testPnPOptim.dir/DependInfo.cmake"
   )

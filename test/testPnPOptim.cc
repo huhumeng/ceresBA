@@ -6,17 +6,17 @@
 
 #include <opencv2/core/core.hpp>
 #include <opencv2/calib3d/calib3d.hpp>
-#define OPTIMIZE_ONLY_POSE 0
+#define OPTIMIZE_ONLY_POSE 1
 using namespace std;
 int main(){
 
     double r[3] = {1.0, 2.0, 3.0};
     double t[3] = {3.0, 2.0, 1.0};
 
-    GenPointWithPoseKnown gener(r, t, 180);
+    GenPointWithPoseKnown gener(r, t, 480);
 
-    double initR[3] = {1.1, 1.9, 3.0};
-    double initT[3] = {3.2, 2.1, 1.1};
+    double initR[3] = {10.1, 21.0, 11.0};
+    double initT[3] = {100.0, 20.1, 31.1};
 
     // Eigen::Quaterniond q(1.0, 0, 0, 0);
     // cout << q.coeffs() << endl;
@@ -32,7 +32,7 @@ int main(){
     ceres::Solver::Options option;
     
     option.linear_solver_type = ceres::DENSE_SCHUR;
-    
+    option.trust_region_strategy_type = ceres::DOGLEG;
     option.minimizer_progress_to_stdout = true;
     
     option.max_num_iterations = 100;

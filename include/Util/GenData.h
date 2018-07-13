@@ -108,7 +108,7 @@ private:
             Eigen::Vector2d noise2(
                 gaussion(0.0, 1.0), gaussion(0.0, 1.0)
             );
-            uv += noise2;
+            // uv += noise2;
             if(!camera->isInCamera(uv))
                 continue;
             p2ds.push_back(uv);

@@ -6,3 +6,6 @@ target_link_libraries(testPnPOptim ${ceresBA_LIBS} ${Third_LIBS})
 
 add_executable(testPnPSE3Optim testPnPSE3Optim.cc)
 target_link_libraries(testPnPSE3Optim ${ceresBA_LIBS} ${Third_LIBS})
+
+add_executable(testQuickly testQuickly.cc)
+target_link_libraries(testQuickly ${ceresBA_LIBS} ${Third_LIBS})

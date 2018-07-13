@@ -126,21 +126,6 @@ testICPOptim/fast:
 .PHONY : testICPOptim/fast
 
 # Convenience name for target.
-test/CMakeFiles/testPnPOptim.dir/rule:
-	cd /home/ling/slam_ws/mycode/ceresBA/build && $(MAKE) -f CMakeFiles/Makefile2 test/CMakeFiles/testPnPOptim.dir/rule
-.PHONY : test/CMakeFiles/testPnPOptim.dir/rule
-
-# Convenience name for target.
-testPnPOptim: test/CMakeFiles/testPnPOptim.dir/rule
-
-.PHONY : testPnPOptim
-
-# fast build rule for target.
-testPnPOptim/fast:
-	cd /home/ling/slam_ws/mycode/ceresBA/build && $(MAKE) -f test/CMakeFiles/testPnPOptim.dir/build.make test/CMakeFiles/testPnPOptim.dir/build
-.PHONY : testPnPOptim/fast
-
-# Convenience name for target.
 test/CMakeFiles/testPnPSE3Optim.dir/rule:
 	cd /home/ling/slam_ws/mycode/ceresBA/build && $(MAKE) -f CMakeFiles/Makefile2 test/CMakeFiles/testPnPSE3Optim.dir/rule
 .PHONY : test/CMakeFiles/testPnPSE3Optim.dir/rule
@@ -154,6 +139,36 @@ testPnPSE3Optim: test/CMakeFiles/testPnPSE3Optim.dir/rule
 testPnPSE3Optim/fast:
 	cd /home/ling/slam_ws/mycode/ceresBA/build && $(MAKE) -f test/CMakeFiles/testPnPSE3Optim.dir/build.make test/CMakeFiles/testPnPSE3Optim.dir/build
 .PHONY : testPnPSE3Optim/fast
+
+# Convenience name for target.
+test/CMakeFiles/testQuickly.dir/rule:
+	cd /home/ling/slam_ws/mycode/ceresBA/build && $(MAKE) -f CMakeFiles/Makefile2 test/CMakeFiles/testQuickly.dir/rule
+.PHONY : test/CMakeFiles/testQuickly.dir/rule
+
+# Convenience name for target.
+testQuickly: test/CMakeFiles/testQuickly.dir/rule
+
+.PHONY : testQuickly
+
+# fast build rule for target.
+testQuickly/fast:
+	cd /home/ling/slam_ws/mycode/ceresBA/build && $(MAKE) -f test/CMakeFiles/testQuickly.dir/build.make test/CMakeFiles/testQuickly.dir/build
+.PHONY : testQuickly/fast
+
+# Convenience name for target.
+test/CMakeFiles/testPnPOptim.dir/rule:
+	cd /home/ling/slam_ws/mycode/ceresBA/build && $(MAKE) -f CMakeFiles/Makefile2 test/CMakeFiles/testPnPOptim.dir/rule
+.PHONY : test/CMakeFiles/testPnPOptim.dir/rule
+
+# Convenience name for target.
+testPnPOptim: test/CMakeFiles/testPnPOptim.dir/rule
+
+.PHONY : testPnPOptim
+
+# fast build rule for target.
+testPnPOptim/fast:
+	cd /home/ling/slam_ws/mycode/ceresBA/build && $(MAKE) -f test/CMakeFiles/testPnPOptim.dir/build.make test/CMakeFiles/testPnPOptim.dir/build
+.PHONY : testPnPOptim/fast
 
 testICPOptim.o: testICPOptim.cc.o
 
@@ -236,6 +251,33 @@ testPnPSE3Optim.cc.s:
 	cd /home/ling/slam_ws/mycode/ceresBA/build && $(MAKE) -f test/CMakeFiles/testPnPSE3Optim.dir/build.make test/CMakeFiles/testPnPSE3Optim.dir/testPnPSE3Optim.cc.s
 .PHONY : testPnPSE3Optim.cc.s
 
+testQuickly.o: testQuickly.cc.o
+
+.PHONY : testQuickly.o
+
+# target to build an object file
+testQuickly.cc.o:
+	cd /home/ling/slam_ws/mycode/ceresBA/build && $(MAKE) -f test/CMakeFiles/testQuickly.dir/build.make test/CMakeFiles/testQuickly.dir/testQuickly.cc.o
+.PHONY : testQuickly.cc.o
+
+testQuickly.i: testQuickly.cc.i
+
+.PHONY : testQuickly.i
+
+# target to preprocess a source file
+testQuickly.cc.i:
+	cd /home/ling/slam_ws/mycode/ceresBA/build && $(MAKE) -f test/CMakeFiles/testQuickly.dir/build.make test/CMakeFiles/testQuickly.dir/testQuickly.cc.i
+.PHONY : testQuickly.cc.i
+
+testQuickly.s: testQuickly.cc.s
+
+.PHONY : testQuickly.s
+
+# target to generate assembly for a file
+testQuickly.cc.s:
+	cd /home/ling/slam_ws/mycode/ceresBA/build && $(MAKE) -f test/CMakeFiles/testQuickly.dir/build.make test/CMakeFiles/testQuickly.dir/testQuickly.cc.s
+.PHONY : testQuickly.cc.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -244,9 +286,10 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... testICPOptim"
-	@echo "... testPnPOptim"
-	@echo "... testPnPSE3Optim"
 	@echo "... rebuild_cache"
+	@echo "... testPnPSE3Optim"
+	@echo "... testQuickly"
+	@echo "... testPnPOptim"
 	@echo "... testICPOptim.o"
 	@echo "... testICPOptim.i"
 	@echo "... testICPOptim.s"
@@ -256,6 +299,9 @@ help:
 	@echo "... testPnPSE3Optim.o"
 	@echo "... testPnPSE3Optim.i"
 	@echo "... testPnPSE3Optim.s"
+	@echo "... testQuickly.o"
+	@echo "... testQuickly.i"
+	@echo "... testQuickly.s"
 .PHONY : help
 
 

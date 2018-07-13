@@ -61,6 +61,8 @@ PnPproblem.h
 /home/ling/slam_ws/mycode/ceresBA/test/PnPproblem.h
 GenData.h
 /home/ling/slam_ws/mycode/ceresBA/test/GenData.h
+SE3.h
+/home/ling/slam_ws/mycode/ceresBA/test/SE3.h
 iostream
 -
 

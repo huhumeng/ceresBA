@@ -137,19 +137,6 @@ testICPOptim/fast:
 .PHONY : testICPOptim/fast
 
 #=============================================================================
-# Target rules for targets named testPnPOptim
-
-# Build rule for target.
-testPnPOptim: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 testPnPOptim
-.PHONY : testPnPOptim
-
-# fast build rule for target.
-testPnPOptim/fast:
-	$(MAKE) -f test/CMakeFiles/testPnPOptim.dir/build.make test/CMakeFiles/testPnPOptim.dir/build
-.PHONY : testPnPOptim/fast
-
-#=============================================================================
 # Target rules for targets named testPnPSE3Optim
 
 # Build rule for target.
@@ -162,6 +149,32 @@ testPnPSE3Optim/fast:
 	$(MAKE) -f test/CMakeFiles/testPnPSE3Optim.dir/build.make test/CMakeFiles/testPnPSE3Optim.dir/build
 .PHONY : testPnPSE3Optim/fast
 
+#=============================================================================
+# Target rules for targets named testQuickly
+
+# Build rule for target.
+testQuickly: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 testQuickly
+.PHONY : testQuickly
+
+# fast build rule for target.
+testQuickly/fast:
+	$(MAKE) -f test/CMakeFiles/testQuickly.dir/build.make test/CMakeFiles/testQuickly.dir/build
+.PHONY : testQuickly/fast
+
+#=============================================================================
+# Target rules for targets named testPnPOptim
+
+# Build rule for target.
+testPnPOptim: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 testPnPOptim
+.PHONY : testPnPOptim
+
+# fast build rule for target.
+testPnPOptim/fast:
+	$(MAKE) -f test/CMakeFiles/testPnPOptim.dir/build.make test/CMakeFiles/testPnPOptim.dir/build
+.PHONY : testPnPOptim/fast
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -172,8 +185,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... ceresBA_LIBS"
 	@echo "... testICPOptim"
-	@echo "... testPnPOptim"
 	@echo "... testPnPSE3Optim"
+	@echo "... testQuickly"
+	@echo "... testPnPOptim"
 .PHONY : help
 
 
