@@ -5,4 +5,5 @@
 /home/ling/slam_ws/mycode/ceresBA/build/src/CMakeFiles/ceresBA_LIBS.dir
 /home/ling/slam_ws/mycode/ceresBA/build/test/CMakeFiles/edit_cache.dir
 /home/ling/slam_ws/mycode/ceresBA/build/test/CMakeFiles/rebuild_cache.dir
+/home/ling/slam_ws/mycode/ceresBA/build/test/CMakeFiles/testPnPOptim.dir
 /home/ling/slam_ws/mycode/ceresBA/build/test/CMakeFiles/testICPOptim.dir

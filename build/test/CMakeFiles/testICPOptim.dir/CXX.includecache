@@ -13,6 +13,8 @@ Eigen/Core
 -
 ceres/rotation.h
 -
+glog/logging.h
+-
 
 ../include/Problem/ICPproblem.h
 ceres/ceres.h

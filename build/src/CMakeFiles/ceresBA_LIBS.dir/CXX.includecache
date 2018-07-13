@@ -13,6 +13,8 @@ Eigen/Core
 -
 ceres/rotation.h
 -
+glog/logging.h
+-
 
 ../include/Util/GenData.h
 Random.h

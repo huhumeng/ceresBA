@@ -118,11 +118,13 @@ clean: src/CMakeFiles/ceresBA_LIBS.dir/clean
 # Directory level rules for directory test
 
 # Convenience name for "all" pass in the directory.
+test/all: test/CMakeFiles/testPnPOptim.dir/all
 test/all: test/CMakeFiles/testICPOptim.dir/all
 
 .PHONY : test/all
 
 # Convenience name for "clean" pass in the directory.
+test/clean: test/CMakeFiles/testPnPOptim.dir/clean
 test/clean: test/CMakeFiles/testICPOptim.dir/clean
 
 .PHONY : test/clean
@@ -131,6 +133,43 @@ test/clean: test/CMakeFiles/testICPOptim.dir/clean
 test/preinstall:
 
 .PHONY : test/preinstall
+
+#=============================================================================
+# Target rules for target test/CMakeFiles/testPnPOptim.dir
+
+# All Build rule for target.
+test/CMakeFiles/testPnPOptim.dir/all:
+	$(MAKE) -f test/CMakeFiles/testPnPOptim.dir/build.make test/CMakeFiles/testPnPOptim.dir/depend
+	$(MAKE) -f test/CMakeFiles/testPnPOptim.dir/build.make test/CMakeFiles/testPnPOptim.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ling/slam_ws/mycode/ceresBA/build/CMakeFiles --progress-num=6,7 "Built target testPnPOptim"
+.PHONY : test/CMakeFiles/testPnPOptim.dir/all
+
+# Include target in all.
+all: test/CMakeFiles/testPnPOptim.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+test/CMakeFiles/testPnPOptim.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ling/slam_ws/mycode/ceresBA/build/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 test/CMakeFiles/testPnPOptim.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ling/slam_ws/mycode/ceresBA/build/CMakeFiles 0
+.PHONY : test/CMakeFiles/testPnPOptim.dir/rule
+
+# Convenience name for target.
+testPnPOptim: test/CMakeFiles/testPnPOptim.dir/rule
+
+.PHONY : testPnPOptim
+
+# clean rule for target.
+test/CMakeFiles/testPnPOptim.dir/clean:
+	$(MAKE) -f test/CMakeFiles/testPnPOptim.dir/build.make test/CMakeFiles/testPnPOptim.dir/clean
+.PHONY : test/CMakeFiles/testPnPOptim.dir/clean
+
+# clean rule for target.
+clean: test/CMakeFiles/testPnPOptim.dir/clean
+
+.PHONY : clean
 
 #=============================================================================
 # Target rules for target test/CMakeFiles/testICPOptim.dir

@@ -111,6 +111,21 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
+test/CMakeFiles/testPnPOptim.dir/rule:
+	cd /home/ling/slam_ws/mycode/ceresBA/build && $(MAKE) -f CMakeFiles/Makefile2 test/CMakeFiles/testPnPOptim.dir/rule
+.PHONY : test/CMakeFiles/testPnPOptim.dir/rule
+
+# Convenience name for target.
+testPnPOptim: test/CMakeFiles/testPnPOptim.dir/rule
+
+.PHONY : testPnPOptim
+
+# fast build rule for target.
+testPnPOptim/fast:
+	cd /home/ling/slam_ws/mycode/ceresBA/build && $(MAKE) -f test/CMakeFiles/testPnPOptim.dir/build.make test/CMakeFiles/testPnPOptim.dir/build
+.PHONY : testPnPOptim/fast
+
+# Convenience name for target.
 test/CMakeFiles/testICPOptim.dir/rule:
 	cd /home/ling/slam_ws/mycode/ceresBA/build && $(MAKE) -f CMakeFiles/Makefile2 test/CMakeFiles/testICPOptim.dir/rule
 .PHONY : test/CMakeFiles/testICPOptim.dir/rule
@@ -152,6 +167,33 @@ testICPOptim.cc.s:
 	cd /home/ling/slam_ws/mycode/ceresBA/build && $(MAKE) -f test/CMakeFiles/testICPOptim.dir/build.make test/CMakeFiles/testICPOptim.dir/testICPOptim.cc.s
 .PHONY : testICPOptim.cc.s
 
+testPnPOptim.o: testPnPOptim.cc.o
+
+.PHONY : testPnPOptim.o
+
+# target to build an object file
+testPnPOptim.cc.o:
+	cd /home/ling/slam_ws/mycode/ceresBA/build && $(MAKE) -f test/CMakeFiles/testPnPOptim.dir/build.make test/CMakeFiles/testPnPOptim.dir/testPnPOptim.cc.o
+.PHONY : testPnPOptim.cc.o
+
+testPnPOptim.i: testPnPOptim.cc.i
+
+.PHONY : testPnPOptim.i
+
+# target to preprocess a source file
+testPnPOptim.cc.i:
+	cd /home/ling/slam_ws/mycode/ceresBA/build && $(MAKE) -f test/CMakeFiles/testPnPOptim.dir/build.make test/CMakeFiles/testPnPOptim.dir/testPnPOptim.cc.i
+.PHONY : testPnPOptim.cc.i
+
+testPnPOptim.s: testPnPOptim.cc.s
+
+.PHONY : testPnPOptim.s
+
+# target to generate assembly for a file
+testPnPOptim.cc.s:
+	cd /home/ling/slam_ws/mycode/ceresBA/build && $(MAKE) -f test/CMakeFiles/testPnPOptim.dir/build.make test/CMakeFiles/testPnPOptim.dir/testPnPOptim.cc.s
+.PHONY : testPnPOptim.cc.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -160,10 +202,14 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
+	@echo "... testPnPOptim"
 	@echo "... testICPOptim"
 	@echo "... testICPOptim.o"
 	@echo "... testICPOptim.i"
 	@echo "... testICPOptim.s"
+	@echo "... testPnPOptim.o"
+	@echo "... testPnPOptim.i"
+	@echo "... testPnPOptim.s"
 .PHONY : help
 
 

@@ -2,7 +2,6 @@
 #include <ceres/ceres.h>
 
 #include "GenData.h"
-// #include "CostFunctions.h"
 #include "ICPproblem.h"
 
 using namespace std;

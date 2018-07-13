@@ -124,6 +124,19 @@ ceresBA_LIBS/fast:
 .PHONY : ceresBA_LIBS/fast
 
 #=============================================================================
+# Target rules for targets named testPnPOptim
+
+# Build rule for target.
+testPnPOptim: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 testPnPOptim
+.PHONY : testPnPOptim
+
+# fast build rule for target.
+testPnPOptim/fast:
+	$(MAKE) -f test/CMakeFiles/testPnPOptim.dir/build.make test/CMakeFiles/testPnPOptim.dir/build
+.PHONY : testPnPOptim/fast
+
+#=============================================================================
 # Target rules for targets named testICPOptim
 
 # Build rule for target.
@@ -145,6 +158,7 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... ceresBA_LIBS"
+	@echo "... testPnPOptim"
 	@echo "... testICPOptim"
 .PHONY : help
 
