@@ -89,7 +89,7 @@ public:
             //     new ReprojectionErrorSE3XYZ7(fx, fy, cx, cy, measure[i][0], measure[i][1]);
 
             problem.AddResidualBlock(costFunc, nullptr, initPose, pworld[i].data());
-            problem.SetParameterBlockConstant(pworld[i].data());
+            // problem.SetParameterBlockConstant(pworld[i].data());
         }
     }
 

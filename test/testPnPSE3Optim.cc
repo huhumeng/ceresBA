@@ -22,12 +22,12 @@ int main(){
     cout << q.toRotationMatrix() << endl;
     // cout << q.coeffs() << endl;
 
-    GenPointWithPoseKnown gener(r, t, 400);
+    GenPointWithPoseKnown gener(r, t, 700);
 
 #if USE_SIX_PARA
-    double initPose[6] = {1.1, 1.1, 1.1, 2.0, 1.0, 1.0};
+    double initPose[6] = {1.1, 2.1, 3.1, 3.1, 2.1, 1.9};
     // cout << gener.p3ds[0] << endl;
-    PnPPointproblemSE3 problem(gener.p2ds, gener.p3ds, initPose);
+    PnPPointproblemSE3 problem(gener.p2ds, gener.p3dnoise, initPose);
     
 #else
     //  0.255322
