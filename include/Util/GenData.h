@@ -20,10 +20,19 @@ public:
         return p;
     }
 
-    bool isInCamera(Eigen::Vector2d& uv){
+    bool isInCamera(const Eigen::Vector2d& uv) const {
         if(uv[0] < 0 || uv[1] < 0)
             return false;
         if(uv[0] > width || uv[1] > height)
+            return false;
+        
+        return true;
+    }
+
+     bool isInCamera(const double& x, const double& y) const {
+        if(x < 0 || y < 0)
+            return false;
+        if(x > width || y > height)
             return false;
         
         return true;
@@ -57,7 +66,9 @@ public:
         genPoint();
     }
 
-    ~GenPointWithPoseKnown(){}
+    ~GenPointWithPoseKnown(){
+        delete camera;
+    }
 
     inline const size_t& N()const{return point_num;}
     
