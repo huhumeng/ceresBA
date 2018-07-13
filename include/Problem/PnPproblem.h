@@ -4,6 +4,7 @@
 #include <vector>
 
 #include "CostFunctions.h"
+#include "CostFunctionsSE3.h"
 
 class PnPproblem{
 public:
@@ -59,5 +60,44 @@ private:
     // 520.9, 521.0, 325.1, 249.7
     double fx = 520.9, fy = 521.0, cx = 325.1, cy = 249.7;
     ceres::Problem problem;
+
+};
+
+class PnPPointproblemSE3{
+public:
+
+    PnPPointproblemSE3(std::vector<Eigen::Vector2d>& measure,
+                       std::vector<Eigen::Vector3d>& pworld,
+                       double* initPose){
+        ordering = new ceres::ParameterBlockOrdering;
+        problem.AddParameterBlock(initPose, 6, new PoseSE3Parameterization6);
+        ordering->AddElementToGroup(initPose, 1);
+        for(size_t i=0; i<measure.size(); ++i)
+        {   
+            
+            problem.AddParameterBlock(pworld[i].data(), 3);
+            ordering->AddElementToGroup(pworld[i].data(), 0);
+
+            ceres::CostFunction* costFunc = 
+                new ReprojectionErrorSE3XYZ6(fx, fy, cx, cy, measure[i][0], measure[i][1]);
+
+            problem.AddResidualBlock(costFunc, nullptr, initPose, pworld[i].data());
+            // ceres::CostFunction* costfunction = 
+            //     new ceres::AutoDiffCostFunction<Project3DTo2DCost, 2, 3, 3, 3>(
+            //         new Project3DTo2DCost(measure[i], fx, fy, cx, cy));
+            // double* p_pworld = ;
+            // problem.AddResidualBlock(costfunction, NULL, initR, initT, pworld[i].data());
+        
+        }
+    }
+
+    void solve(ceres::Solver::Options& option, ceres::Solver::Summary* summary){
+        ceres::Solve(option, &problem, summary);
+    }
+private:
+    // 520.9, 521.0, 325.1, 249.7
+    double fx = 520.9, fy = 521.0, cx = 325.1, cy = 249.7;
+    ceres::Problem problem;
+    ceres::ParameterBlockOrdering* ordering = nullptr;
 
 };

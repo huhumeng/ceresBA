@@ -16,6 +16,16 @@ ceres/rotation.h
 glog/logging.h
 -
 
+../include/CeresCost/CostFunctionsSE3.h
+SE3.h
+../include/CeresCost/SE3.h
+ceres/ceres.h
+-
+Eigen/Core
+-
+Eigen/Geometry
+-
+
 ../include/Problem/PnPproblem.h
 ceres/ceres.h
 -
@@ -23,6 +33,8 @@ vector
 -
 CostFunctions.h
 ../include/Problem/CostFunctions.h
+CostFunctionsSE3.h
+../include/Problem/CostFunctionsSE3.h
 
 ../include/Util/GenData.h
 Random.h
@@ -36,6 +48,12 @@ ceres/rotation.h
 
 ../include/Util/Random.h
 random
+-
+
+../include/Util/SE3.h
+Eigen/Core
+-
+Eigen/Geometry
 -
 
 /home/ling/slam_ws/mycode/ceresBA/test/testPnPOptim.cc

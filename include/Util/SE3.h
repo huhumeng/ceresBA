@@ -2,7 +2,6 @@
 
 #include <Eigen/Core>
 #include <Eigen/Geometry>
-#include <math.h>
 
 const double SMALL_EPS = 1e-10;
 

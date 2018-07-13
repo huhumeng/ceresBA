@@ -124,6 +124,19 @@ ceresBA_LIBS/fast:
 .PHONY : ceresBA_LIBS/fast
 
 #=============================================================================
+# Target rules for targets named testICPOptim
+
+# Build rule for target.
+testICPOptim: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 testICPOptim
+.PHONY : testICPOptim
+
+# fast build rule for target.
+testICPOptim/fast:
+	$(MAKE) -f test/CMakeFiles/testICPOptim.dir/build.make test/CMakeFiles/testICPOptim.dir/build
+.PHONY : testICPOptim/fast
+
+#=============================================================================
 # Target rules for targets named testPnPOptim
 
 # Build rule for target.
@@ -137,17 +150,17 @@ testPnPOptim/fast:
 .PHONY : testPnPOptim/fast
 
 #=============================================================================
-# Target rules for targets named testICPOptim
+# Target rules for targets named testPnPSE3Optim
 
 # Build rule for target.
-testICPOptim: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 testICPOptim
-.PHONY : testICPOptim
+testPnPSE3Optim: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 testPnPSE3Optim
+.PHONY : testPnPSE3Optim
 
 # fast build rule for target.
-testICPOptim/fast:
-	$(MAKE) -f test/CMakeFiles/testICPOptim.dir/build.make test/CMakeFiles/testICPOptim.dir/build
-.PHONY : testICPOptim/fast
+testPnPSE3Optim/fast:
+	$(MAKE) -f test/CMakeFiles/testPnPSE3Optim.dir/build.make test/CMakeFiles/testPnPSE3Optim.dir/build
+.PHONY : testPnPSE3Optim/fast
 
 # Help Target
 help:
@@ -158,8 +171,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... ceresBA_LIBS"
-	@echo "... testPnPOptim"
 	@echo "... testICPOptim"
+	@echo "... testPnPOptim"
+	@echo "... testPnPSE3Optim"
 .PHONY : help
 
 

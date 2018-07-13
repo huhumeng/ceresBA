@@ -111,6 +111,21 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
+test/CMakeFiles/testICPOptim.dir/rule:
+	cd /home/ling/slam_ws/mycode/ceresBA/build && $(MAKE) -f CMakeFiles/Makefile2 test/CMakeFiles/testICPOptim.dir/rule
+.PHONY : test/CMakeFiles/testICPOptim.dir/rule
+
+# Convenience name for target.
+testICPOptim: test/CMakeFiles/testICPOptim.dir/rule
+
+.PHONY : testICPOptim
+
+# fast build rule for target.
+testICPOptim/fast:
+	cd /home/ling/slam_ws/mycode/ceresBA/build && $(MAKE) -f test/CMakeFiles/testICPOptim.dir/build.make test/CMakeFiles/testICPOptim.dir/build
+.PHONY : testICPOptim/fast
+
+# Convenience name for target.
 test/CMakeFiles/testPnPOptim.dir/rule:
 	cd /home/ling/slam_ws/mycode/ceresBA/build && $(MAKE) -f CMakeFiles/Makefile2 test/CMakeFiles/testPnPOptim.dir/rule
 .PHONY : test/CMakeFiles/testPnPOptim.dir/rule
@@ -126,19 +141,19 @@ testPnPOptim/fast:
 .PHONY : testPnPOptim/fast
 
 # Convenience name for target.
-test/CMakeFiles/testICPOptim.dir/rule:
-	cd /home/ling/slam_ws/mycode/ceresBA/build && $(MAKE) -f CMakeFiles/Makefile2 test/CMakeFiles/testICPOptim.dir/rule
-.PHONY : test/CMakeFiles/testICPOptim.dir/rule
+test/CMakeFiles/testPnPSE3Optim.dir/rule:
+	cd /home/ling/slam_ws/mycode/ceresBA/build && $(MAKE) -f CMakeFiles/Makefile2 test/CMakeFiles/testPnPSE3Optim.dir/rule
+.PHONY : test/CMakeFiles/testPnPSE3Optim.dir/rule
 
 # Convenience name for target.
-testICPOptim: test/CMakeFiles/testICPOptim.dir/rule
+testPnPSE3Optim: test/CMakeFiles/testPnPSE3Optim.dir/rule
 
-.PHONY : testICPOptim
+.PHONY : testPnPSE3Optim
 
 # fast build rule for target.
-testICPOptim/fast:
-	cd /home/ling/slam_ws/mycode/ceresBA/build && $(MAKE) -f test/CMakeFiles/testICPOptim.dir/build.make test/CMakeFiles/testICPOptim.dir/build
-.PHONY : testICPOptim/fast
+testPnPSE3Optim/fast:
+	cd /home/ling/slam_ws/mycode/ceresBA/build && $(MAKE) -f test/CMakeFiles/testPnPSE3Optim.dir/build.make test/CMakeFiles/testPnPSE3Optim.dir/build
+.PHONY : testPnPSE3Optim/fast
 
 testICPOptim.o: testICPOptim.cc.o
 
@@ -194,6 +209,33 @@ testPnPOptim.cc.s:
 	cd /home/ling/slam_ws/mycode/ceresBA/build && $(MAKE) -f test/CMakeFiles/testPnPOptim.dir/build.make test/CMakeFiles/testPnPOptim.dir/testPnPOptim.cc.s
 .PHONY : testPnPOptim.cc.s
 
+testPnPSE3Optim.o: testPnPSE3Optim.cc.o
+
+.PHONY : testPnPSE3Optim.o
+
+# target to build an object file
+testPnPSE3Optim.cc.o:
+	cd /home/ling/slam_ws/mycode/ceresBA/build && $(MAKE) -f test/CMakeFiles/testPnPSE3Optim.dir/build.make test/CMakeFiles/testPnPSE3Optim.dir/testPnPSE3Optim.cc.o
+.PHONY : testPnPSE3Optim.cc.o
+
+testPnPSE3Optim.i: testPnPSE3Optim.cc.i
+
+.PHONY : testPnPSE3Optim.i
+
+# target to preprocess a source file
+testPnPSE3Optim.cc.i:
+	cd /home/ling/slam_ws/mycode/ceresBA/build && $(MAKE) -f test/CMakeFiles/testPnPSE3Optim.dir/build.make test/CMakeFiles/testPnPSE3Optim.dir/testPnPSE3Optim.cc.i
+.PHONY : testPnPSE3Optim.cc.i
+
+testPnPSE3Optim.s: testPnPSE3Optim.cc.s
+
+.PHONY : testPnPSE3Optim.s
+
+# target to generate assembly for a file
+testPnPSE3Optim.cc.s:
+	cd /home/ling/slam_ws/mycode/ceresBA/build && $(MAKE) -f test/CMakeFiles/testPnPSE3Optim.dir/build.make test/CMakeFiles/testPnPSE3Optim.dir/testPnPSE3Optim.cc.s
+.PHONY : testPnPSE3Optim.cc.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -201,15 +243,19 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... edit_cache"
-	@echo "... rebuild_cache"
-	@echo "... testPnPOptim"
 	@echo "... testICPOptim"
+	@echo "... testPnPOptim"
+	@echo "... testPnPSE3Optim"
+	@echo "... rebuild_cache"
 	@echo "... testICPOptim.o"
 	@echo "... testICPOptim.i"
 	@echo "... testICPOptim.s"
 	@echo "... testPnPOptim.o"
 	@echo "... testPnPOptim.i"
 	@echo "... testPnPOptim.s"
+	@echo "... testPnPSE3Optim.o"
+	@echo "... testPnPSE3Optim.i"
+	@echo "... testPnPSE3Optim.s"
 .PHONY : help
 
 
