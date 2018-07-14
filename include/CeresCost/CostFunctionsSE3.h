@@ -35,14 +35,14 @@ public:
 
         // T_cw
         Eigen::Vector3d p = quaterd * point + trans;
-        std::cout << quaterd.coeffs() << std::endl;
+        // std::cout << quaterd.coeffs() << std::endl;
         // std::cout << p << std::endl;
         // 残差定义
         // double f_by_z = f / p[2];
         residuals[0] = fx / p[2] * p[0] + cx - _observation_x;
         residuals[1] = fy / p[2] * p[1] + cy - _observation_y;
 
-        std::cout << residuals[0] << " " << residuals[1] << std::endl;
+        // std::cout << residuals[0] << " " << residuals[1] << std::endl;
 
         Eigen::Matrix<double, 2, 3, Eigen::RowMajor> J_cam;
         

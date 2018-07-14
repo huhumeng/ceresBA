@@ -38,6 +38,15 @@ public:
         return true;
     }
 
+    bool isVisable(const double& x, const double& y) const{
+        if(x<10 || y<10)
+            return false;
+        if(x>width-10 || y>height-10)
+            return false;
+        
+        return true;
+    }
+
 private:
     double fx, fy, cx, cy;
     double height, width;

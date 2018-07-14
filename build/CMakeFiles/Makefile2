@@ -118,6 +118,7 @@ clean: src/CMakeFiles/ceresBA_LIBS.dir/clean
 # Directory level rules for directory test
 
 # Convenience name for "all" pass in the directory.
+test/all: test/CMakeFiles/testDirectOpti.dir/all
 test/all: test/CMakeFiles/testICPOptim.dir/all
 test/all: test/CMakeFiles/testPnPSE3Optim.dir/all
 test/all: test/CMakeFiles/testQuickly.dir/all
@@ -126,6 +127,7 @@ test/all: test/CMakeFiles/testPnPOptim.dir/all
 .PHONY : test/all
 
 # Convenience name for "clean" pass in the directory.
+test/clean: test/CMakeFiles/testDirectOpti.dir/clean
 test/clean: test/CMakeFiles/testICPOptim.dir/clean
 test/clean: test/CMakeFiles/testPnPSE3Optim.dir/clean
 test/clean: test/CMakeFiles/testQuickly.dir/clean
@@ -139,13 +141,50 @@ test/preinstall:
 .PHONY : test/preinstall
 
 #=============================================================================
+# Target rules for target test/CMakeFiles/testDirectOpti.dir
+
+# All Build rule for target.
+test/CMakeFiles/testDirectOpti.dir/all:
+	$(MAKE) -f test/CMakeFiles/testDirectOpti.dir/build.make test/CMakeFiles/testDirectOpti.dir/depend
+	$(MAKE) -f test/CMakeFiles/testDirectOpti.dir/build.make test/CMakeFiles/testDirectOpti.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ling/slam_ws/mycode/ceresBA/build/CMakeFiles --progress-num=4,5 "Built target testDirectOpti"
+.PHONY : test/CMakeFiles/testDirectOpti.dir/all
+
+# Include target in all.
+all: test/CMakeFiles/testDirectOpti.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+test/CMakeFiles/testDirectOpti.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ling/slam_ws/mycode/ceresBA/build/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 test/CMakeFiles/testDirectOpti.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ling/slam_ws/mycode/ceresBA/build/CMakeFiles 0
+.PHONY : test/CMakeFiles/testDirectOpti.dir/rule
+
+# Convenience name for target.
+testDirectOpti: test/CMakeFiles/testDirectOpti.dir/rule
+
+.PHONY : testDirectOpti
+
+# clean rule for target.
+test/CMakeFiles/testDirectOpti.dir/clean:
+	$(MAKE) -f test/CMakeFiles/testDirectOpti.dir/build.make test/CMakeFiles/testDirectOpti.dir/clean
+.PHONY : test/CMakeFiles/testDirectOpti.dir/clean
+
+# clean rule for target.
+clean: test/CMakeFiles/testDirectOpti.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
 # Target rules for target test/CMakeFiles/testICPOptim.dir
 
 # All Build rule for target.
 test/CMakeFiles/testICPOptim.dir/all:
 	$(MAKE) -f test/CMakeFiles/testICPOptim.dir/build.make test/CMakeFiles/testICPOptim.dir/depend
 	$(MAKE) -f test/CMakeFiles/testICPOptim.dir/build.make test/CMakeFiles/testICPOptim.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ling/slam_ws/mycode/ceresBA/build/CMakeFiles --progress-num=4,5 "Built target testICPOptim"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ling/slam_ws/mycode/ceresBA/build/CMakeFiles --progress-num=6,7 "Built target testICPOptim"
 .PHONY : test/CMakeFiles/testICPOptim.dir/all
 
 # Include target in all.
@@ -182,7 +221,7 @@ clean: test/CMakeFiles/testICPOptim.dir/clean
 test/CMakeFiles/testPnPSE3Optim.dir/all:
 	$(MAKE) -f test/CMakeFiles/testPnPSE3Optim.dir/build.make test/CMakeFiles/testPnPSE3Optim.dir/depend
 	$(MAKE) -f test/CMakeFiles/testPnPSE3Optim.dir/build.make test/CMakeFiles/testPnPSE3Optim.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ling/slam_ws/mycode/ceresBA/build/CMakeFiles --progress-num=8,9 "Built target testPnPSE3Optim"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ling/slam_ws/mycode/ceresBA/build/CMakeFiles --progress-num=10,11 "Built target testPnPSE3Optim"
 .PHONY : test/CMakeFiles/testPnPSE3Optim.dir/all
 
 # Include target in all.
@@ -219,7 +258,7 @@ clean: test/CMakeFiles/testPnPSE3Optim.dir/clean
 test/CMakeFiles/testQuickly.dir/all:
 	$(MAKE) -f test/CMakeFiles/testQuickly.dir/build.make test/CMakeFiles/testQuickly.dir/depend
 	$(MAKE) -f test/CMakeFiles/testQuickly.dir/build.make test/CMakeFiles/testQuickly.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ling/slam_ws/mycode/ceresBA/build/CMakeFiles --progress-num=10,11 "Built target testQuickly"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ling/slam_ws/mycode/ceresBA/build/CMakeFiles --progress-num=12,13 "Built target testQuickly"
 .PHONY : test/CMakeFiles/testQuickly.dir/all
 
 # Include target in all.
@@ -256,7 +295,7 @@ clean: test/CMakeFiles/testQuickly.dir/clean
 test/CMakeFiles/testPnPOptim.dir/all:
 	$(MAKE) -f test/CMakeFiles/testPnPOptim.dir/build.make test/CMakeFiles/testPnPOptim.dir/depend
 	$(MAKE) -f test/CMakeFiles/testPnPOptim.dir/build.make test/CMakeFiles/testPnPOptim.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ling/slam_ws/mycode/ceresBA/build/CMakeFiles --progress-num=6,7 "Built target testPnPOptim"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ling/slam_ws/mycode/ceresBA/build/CMakeFiles --progress-num=8,9 "Built target testPnPOptim"
 .PHONY : test/CMakeFiles/testPnPOptim.dir/all
 
 # Include target in all.

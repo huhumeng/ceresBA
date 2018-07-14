@@ -124,6 +124,19 @@ ceresBA_LIBS/fast:
 .PHONY : ceresBA_LIBS/fast
 
 #=============================================================================
+# Target rules for targets named testDirectOpti
+
+# Build rule for target.
+testDirectOpti: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 testDirectOpti
+.PHONY : testDirectOpti
+
+# fast build rule for target.
+testDirectOpti/fast:
+	$(MAKE) -f test/CMakeFiles/testDirectOpti.dir/build.make test/CMakeFiles/testDirectOpti.dir/build
+.PHONY : testDirectOpti/fast
+
+#=============================================================================
 # Target rules for targets named testICPOptim
 
 # Build rule for target.
@@ -184,6 +197,7 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... ceresBA_LIBS"
+	@echo "... testDirectOpti"
 	@echo "... testICPOptim"
 	@echo "... testPnPSE3Optim"
 	@echo "... testQuickly"

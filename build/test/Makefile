@@ -111,6 +111,21 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
+test/CMakeFiles/testDirectOpti.dir/rule:
+	cd /home/ling/slam_ws/mycode/ceresBA/build && $(MAKE) -f CMakeFiles/Makefile2 test/CMakeFiles/testDirectOpti.dir/rule
+.PHONY : test/CMakeFiles/testDirectOpti.dir/rule
+
+# Convenience name for target.
+testDirectOpti: test/CMakeFiles/testDirectOpti.dir/rule
+
+.PHONY : testDirectOpti
+
+# fast build rule for target.
+testDirectOpti/fast:
+	cd /home/ling/slam_ws/mycode/ceresBA/build && $(MAKE) -f test/CMakeFiles/testDirectOpti.dir/build.make test/CMakeFiles/testDirectOpti.dir/build
+.PHONY : testDirectOpti/fast
+
+# Convenience name for target.
 test/CMakeFiles/testICPOptim.dir/rule:
 	cd /home/ling/slam_ws/mycode/ceresBA/build && $(MAKE) -f CMakeFiles/Makefile2 test/CMakeFiles/testICPOptim.dir/rule
 .PHONY : test/CMakeFiles/testICPOptim.dir/rule
@@ -169,6 +184,33 @@ testPnPOptim: test/CMakeFiles/testPnPOptim.dir/rule
 testPnPOptim/fast:
 	cd /home/ling/slam_ws/mycode/ceresBA/build && $(MAKE) -f test/CMakeFiles/testPnPOptim.dir/build.make test/CMakeFiles/testPnPOptim.dir/build
 .PHONY : testPnPOptim/fast
+
+testDirectOpti.o: testDirectOpti.cc.o
+
+.PHONY : testDirectOpti.o
+
+# target to build an object file
+testDirectOpti.cc.o:
+	cd /home/ling/slam_ws/mycode/ceresBA/build && $(MAKE) -f test/CMakeFiles/testDirectOpti.dir/build.make test/CMakeFiles/testDirectOpti.dir/testDirectOpti.cc.o
+.PHONY : testDirectOpti.cc.o
+
+testDirectOpti.i: testDirectOpti.cc.i
+
+.PHONY : testDirectOpti.i
+
+# target to preprocess a source file
+testDirectOpti.cc.i:
+	cd /home/ling/slam_ws/mycode/ceresBA/build && $(MAKE) -f test/CMakeFiles/testDirectOpti.dir/build.make test/CMakeFiles/testDirectOpti.dir/testDirectOpti.cc.i
+.PHONY : testDirectOpti.cc.i
+
+testDirectOpti.s: testDirectOpti.cc.s
+
+.PHONY : testDirectOpti.s
+
+# target to generate assembly for a file
+testDirectOpti.cc.s:
+	cd /home/ling/slam_ws/mycode/ceresBA/build && $(MAKE) -f test/CMakeFiles/testDirectOpti.dir/build.make test/CMakeFiles/testDirectOpti.dir/testDirectOpti.cc.s
+.PHONY : testDirectOpti.cc.s
 
 testICPOptim.o: testICPOptim.cc.o
 
@@ -284,12 +326,16 @@ help:
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
+	@echo "... testDirectOpti"
 	@echo "... edit_cache"
 	@echo "... testICPOptim"
 	@echo "... rebuild_cache"
 	@echo "... testPnPSE3Optim"
 	@echo "... testQuickly"
 	@echo "... testPnPOptim"
+	@echo "... testDirectOpti.o"
+	@echo "... testDirectOpti.i"
+	@echo "... testDirectOpti.s"
 	@echo "... testICPOptim.o"
 	@echo "... testICPOptim.i"
 	@echo "... testICPOptim.s"

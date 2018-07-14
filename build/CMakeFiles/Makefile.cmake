@@ -66,6 +66,7 @@ set(CMAKE_MAKEFILE_PRODUCTS
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
   "src/CMakeFiles/ceresBA_LIBS.dir/DependInfo.cmake"
+  "test/CMakeFiles/testDirectOpti.dir/DependInfo.cmake"
   "test/CMakeFiles/testICPOptim.dir/DependInfo.cmake"
   "test/CMakeFiles/testPnPSE3Optim.dir/DependInfo.cmake"
   "test/CMakeFiles/testQuickly.dir/DependInfo.cmake"
