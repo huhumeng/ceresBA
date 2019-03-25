@@ -10,9 +10,4 @@ mkdir build && cd build
 cmake ..
 make -j
 ```
-
-I also add some unit test module in the test directory, if you have any problem when using it, please contact me with lingy17@mails.tsinghua.edu.cn or lingyong@momenta.ai.
-
-For the direct costfuction, we has tested it in another structure, you can implement it easyily.
-
 Thanks.
